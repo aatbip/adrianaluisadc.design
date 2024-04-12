@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { neueRegrade, uncutSans } from "@/fonts/index";
+import ThemeRegistry from "./ThemeRegistry";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${neueRegrade.className} ${uncutSans.className}`}>{children}</body>
+      <body className={`${neueRegrade.className} ${uncutSans.className}`}>
+        <ThemeRegistry options={{ key: 'mui' }}>
+          {children}
+        </ThemeRegistry>
+      </body>
     </html>
   );
 }

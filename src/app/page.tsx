@@ -1,13 +1,15 @@
+'use client'
+
 import { Box, Typography } from "@mui/material";
 
 export default function Home() {
   return (
     <>
       <Box>
-        <Typography variant="displaySm">WORKS</Typography>
+        <Typography>WORKS</Typography>
       </Box>
       <Box>
-        <Typography variant="display">WORKS</Typography>
+        <Typography variant="heading4">WORKS</Typography>
       </Box>
     </>
   );
