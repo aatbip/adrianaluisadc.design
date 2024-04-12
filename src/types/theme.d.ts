@@ -103,5 +103,18 @@ declare module '@mui/material/Typography' {
     capsLg: true
     capsMd: true
     capsXlg: true
+    h1: false
+    h2: false
+    h3: false
+    h4: false
+    h5: false
+    h6: false
+    caption: false
+    subtitle1: false
+    subtitle2: false
+    body1: false
+    body2: false
+    button: false
+    overline: false
   }
 }
