@@ -6,6 +6,8 @@ import { AppCursor } from "@/components/CustomCursor";
 import { AppBackground } from "@/hoc/AppBackground";
 import { AppMargin } from "@/hoc/AppMargin";
 import { Header } from "@/components/Layouts/Header";
+import { SecondaryHeader } from "@/components/Layouts/SecondaryHeader";
+import { SmoothScroll } from "@/hoc/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "adrianaluisadc.design",
@@ -21,14 +23,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${neueRegrade.className} ${uncutSans.className}`}>
         <AppCursor>
-          <ThemeRegistry options={{ key: 'mui' }}>
-            <AppBackground>
-              <AppMargin>
-                <Header />
-                {children}
-              </AppMargin>
-            </AppBackground>
-          </ThemeRegistry>
+          <SmoothScroll>
+            <ThemeRegistry options={{ key: 'mui' }}>
+              <AppBackground>
+                <AppMargin>
+                  <Header />
+                  <SecondaryHeader />
+                  {children}
+                </AppMargin>
+              </AppBackground>
+            </ThemeRegistry>
+          </SmoothScroll>
         </AppCursor>
       </body>
     </html>
