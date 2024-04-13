@@ -5,6 +5,7 @@ import { TypographyWithSecondaryTextColor } from "../Styled/TypographyWithSecond
 import { MoonBrightIcon, SunBrightIcon } from "@/icons"
 import { useAppState } from "@/hooks/useAppState"
 import { ThemeMode } from "@/types/interfaces"
+import { AnimateUnderline } from "../Styled/AnimateUnderline"
 
 export const Header = () => {
   const appState = useAppState()
@@ -27,11 +28,21 @@ export const Header = () => {
       <TypographyWithSecondaryTextColor variant="capsSm">Adriana Luisa Dela Cruz <span style={{ margin: '0px 12px' }}>&#x2022;</span>UX Designer</TypographyWithSecondaryTextColor>
 
       <Stack direction="row" columnGap={10}>
-        <DynamicDisplayTypography variant="capsSm" className="link">Works</DynamicDisplayTypography>
-        <DynamicDisplayTypography variant="capsSm" className="link">UI Studies</DynamicDisplayTypography>
-        <DynamicDisplayTypography variant="capsSm" className="link">About Me</DynamicDisplayTypography>
-        <TypographyWithSecondaryTextColor variant="capsSm" className="link">LinkedIn</TypographyWithSecondaryTextColor>
-        <TypographyWithSecondaryTextColor variant="capsSm" className="link">Behance</TypographyWithSecondaryTextColor>
+        <AnimateUnderline className="link">
+          <DynamicDisplayTypography variant="capsSm">Works</DynamicDisplayTypography>
+        </AnimateUnderline>
+        <AnimateUnderline className="link">
+          <DynamicDisplayTypography variant="capsSm">UI Studies</DynamicDisplayTypography>
+        </AnimateUnderline>
+        <AnimateUnderline className="link">
+          <DynamicDisplayTypography variant="capsSm">About Me</DynamicDisplayTypography>
+        </AnimateUnderline>
+        <AnimateUnderline className="link">
+          <TypographyWithSecondaryTextColor variant="capsSm">LinkedIn</TypographyWithSecondaryTextColor>
+        </AnimateUnderline>
+        <AnimateUnderline className="link">
+          <TypographyWithSecondaryTextColor variant="capsSm">Behance</TypographyWithSecondaryTextColor>
+        </AnimateUnderline>
         <Box className="link" onClick={() => appState?.setAppState(prev => ({ ...prev, themeMode: appState?.themeMode === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK }))}>
           {
             appState?.themeMode === ThemeMode.DARK ? <SunBrightIcon /> : <MoonBrightIcon />

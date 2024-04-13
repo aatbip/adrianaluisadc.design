@@ -1,4 +1,4 @@
-import { MutableRefObject, useEffect, useRef, useState } from "react";
+import { MutableRefObject, useEffect, useState } from "react";
 
 export const useCheckElementInViewport = (targetRef: MutableRefObject<HTMLDivElement | null>) => {
   const [isVisible, setIsVisible] = useState(false);
