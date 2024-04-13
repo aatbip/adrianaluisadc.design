@@ -9,6 +9,7 @@ export declare module '@mui/material/styles' {
         sm: number
         md: number
         lg: number
+        xl: number
       }
     }
     color: {
@@ -31,6 +32,7 @@ export declare module '@mui/material/styles' {
         sm: number
         md: number
         lg: number
+        xl: number
       }
     }
     color: {

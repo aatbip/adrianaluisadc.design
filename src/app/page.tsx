@@ -1,7 +1,11 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <Typography variant="heading1">Hey!</Typography>
+    <>
+      <Box height="100vh">
+        <Typography variant="Body Bold" className="link" sx={{}}></Typography>
+      </Box>
+    </>
   );
 }
