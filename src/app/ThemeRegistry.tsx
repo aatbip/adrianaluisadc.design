@@ -8,11 +8,13 @@ import CssBaseline from '@mui/material/CssBaseline'
 import React from 'react'
 import { lightTheme } from '@/theme/lightTheme'
 import { darkTheme } from '@/theme/darkTheme'
+import { useAppState } from '@/hooks/useAppState'
+import { ThemeMode } from '@/types/interfaces'
 
 export default function ThemeRegistry(props: any) {
   const { options, children } = props
-  //change mode with context later
-  const MODE = 'dark'
+
+  const themeMode = useAppState()?.themeMode
 
   const [{ cache, flush }] = React.useState(() => {
     const cache = createCache(options)
@@ -56,7 +58,7 @@ export default function ThemeRegistry(props: any) {
 
   return (
     <CacheProvider value={cache}>
-      <ThemeProvider theme={MODE === 'dark' ? darkTheme : lightTheme}>
+      <ThemeProvider theme={themeMode === ThemeMode.DARK ? darkTheme : lightTheme}>
         <CssBaseline />
         {children}
       </ThemeProvider>

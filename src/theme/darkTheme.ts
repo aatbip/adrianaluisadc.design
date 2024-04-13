@@ -20,7 +20,7 @@ export const darkTheme = createTheme({
     background: {
       primary: '#222324'
     },
-    outline: '#2A2A2A',
+    outline: '#333333',
     bright: '#E3BC57'
   },
   typography: {

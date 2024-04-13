@@ -8,6 +8,7 @@ import { AppMargin } from "@/hoc/AppMargin";
 import { Header } from "@/components/Layouts/Header";
 import { SecondaryHeader } from "@/components/Layouts/SecondaryHeader";
 import { SmoothScroll } from "@/hoc/SmoothScroll";
+import { AppContextProvider } from "@/context";
 
 export const metadata: Metadata = {
   title: "adrianaluisadc.design",
@@ -21,9 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${neueRegrade.className} ${uncutSans.className}`}>
-        <AppCursor>
-          <SmoothScroll>
+      <AppContextProvider>
+        <body className={`${neueRegrade.className} ${uncutSans.className}`}>
+          {/* <SmoothScroll> */}
+          <AppCursor>
             <ThemeRegistry options={{ key: 'mui' }}>
               <AppBackground>
                 <AppMargin>
@@ -33,9 +35,10 @@ export default function RootLayout({
                 </AppMargin>
               </AppBackground>
             </ThemeRegistry>
-          </SmoothScroll>
-        </AppCursor>
-      </body>
+          </AppCursor>
+          {/* </SmoothScroll> */}
+        </body>
+      </AppContextProvider>
     </html>
   );
 }

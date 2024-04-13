@@ -13,7 +13,7 @@ export const SmoothScroll = ({ children }: { children: ReactNode; }) => {
 
   // 3.
   const data = {
-    ease: 0.005,
+    ease: 0.02,
     current: 0,
     previous: 0,
     rounded: 0,
