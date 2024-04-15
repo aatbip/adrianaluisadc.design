@@ -24,7 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <AppContextProvider>
         <body className={`${neueRegrade.className} ${uncutSans.className}`}>
-          {/* <SmoothScroll> */}
           <AppCursor>
             <ThemeRegistry options={{ key: 'mui' }}>
               <AppBackground>
@@ -36,7 +35,6 @@ export default function RootLayout({
               </AppBackground>
             </ThemeRegistry>
           </AppCursor>
-          {/* </SmoothScroll> */}
         </body>
       </AppContextProvider>
     </html>

@@ -1,10 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import { WorkSection } from "./ui/WorkSection";
+
 
 export default function Home() {
   return (
     <>
-      <Box height="120vh">
-        <Typography variant="Body Bold" className="link" sx={{}}></Typography>
+      <Box>
+        <WorkSection />
       </Box>
     </>
   );

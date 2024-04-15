@@ -19,11 +19,21 @@ export const SecondaryHeader = () => {
 
   return (
     <Box pt="18px">
-      <TypographyWithPrimaryTextColor variant="heading1" fontWeight={300} lineHeight="126px" letterSpacing="-2px">Hi! I'm Adriana, a UX Designer who specializes in <BoldedText variant="heading1">User Interface, Design System,</BoldedText> & <BoldedText variant="heading1">Storytelling</BoldedText></TypographyWithPrimaryTextColor>
+      <TypographyWithPrimaryTextColor sx={{
+        '@media (max-width:768px)': {
+          fontSize: '56px',
+          lineHeight: "70.56px",
+        },
+        '@media (max-width:600px)': {
+          fontSize: '48px',
+          lineHeight: "60.48px",
+        },
+      }} variant="heading1" fontWeight={300} lineHeight="126px" letterSpacing="-2px">Hi! I'm Adriana, a UX Designer who specializes in <BoldedText variant="heading1">User Interface, Design System,</BoldedText> & <BoldedText variant="heading1">Storytelling</BoldedText></TypographyWithPrimaryTextColor>
 
-      <Stack direction="row" columnGap={10} p="64px 0px" sx={{
-        borderBottom: (theme) => `1px solid ${theme.color.outline}`
-      }} ref={targetRef}>
+      <Stack direction="row" columnGap={10} rowGap={10} p="64px 0px" sx={{
+        borderBottom: (theme) => `1px solid ${theme.color.outline}`,
+        flexWrap: 'wrap'
+      }} ref={targetRef} >
         <CTAButton content="WORKS" handleClick={() => { }} />
         <CTAButton content="UI STUDIES" handleClick={() => { }} />
         <CTAButton content="ABOUT ME" handleClick={() => { }} />
@@ -37,5 +47,13 @@ const BoldedText = styled(TypographyWithPrimaryTextColor)({
   fontWeight: 500,
   fontStyle: 'italic',
   lineHeight: "126px",
-  letterSpacing: '-2px'
+  letterSpacing: '-2px',
+  '@media (max-width:768px)': {
+    fontSize: '56px',
+    lineHeight: "70.56px",
+  },
+  '@media (max-width:600px)': {
+    fontSize: '48px',
+    lineHeight: "60.48px",
+  },
 })

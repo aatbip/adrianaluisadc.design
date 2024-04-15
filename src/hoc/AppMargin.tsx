@@ -6,7 +6,7 @@ import { ReactNode } from "react"
 export const AppMargin = ({ children }: { children: ReactNode; }) => {
   return (
     <Box sx={{
-      padding: { xs: '0px 20px', md: '0px 40px' }
+      padding: { xs: '0px 20px', md: '0px 40px' },
     }}>
       {children}
     </Box>
