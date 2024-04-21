@@ -12,6 +12,7 @@ export interface IBasicCardProps {
   caption: string;
   title: string;
   imagePath: string;
+  pathName: string;
 }
 
 
