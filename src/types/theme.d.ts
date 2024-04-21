@@ -16,6 +16,8 @@ export declare module '@mui/material/styles' {
       text: {
         primary: string
         secondary: string
+        variation1: string
+        variation2: string
       }
       background: {
         primary: string
@@ -39,6 +41,8 @@ export declare module '@mui/material/styles' {
       text: {
         primary: React.CSSProperties['color']
         secondary: React.CSSProperties['color']
+        variation1: React.CSSProperties['color']
+        variation2: React.CSSProperties['color']
       }
       background: {
         primary: React.CSSProperties['color']

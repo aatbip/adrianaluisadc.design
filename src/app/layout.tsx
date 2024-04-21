@@ -6,7 +6,6 @@ import { AppCursor } from "@/components/CustomCursor";
 import { AppBackground } from "@/hoc/AppBackground";
 import { AppMargin } from "@/hoc/AppMargin";
 import { Header } from "@/components/Layouts/Header";
-import { SmoothScroll } from "@/hoc/SmoothScroll";
 import { AppContextProvider } from "@/context";
 
 export const metadata: Metadata = {
