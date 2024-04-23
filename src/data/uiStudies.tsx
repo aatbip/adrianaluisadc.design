@@ -4,6 +4,25 @@ export const uiStudies: IBasicCardProps[] = [
   {
     caption: '2023 / UI DESIGN',
     title: 'Dispence Go',
-    imagePath: 'DispenceGo/main.png'
-  }
+    imagePath: 'DispenceGo/main.png',
+    pathName: 'DispenceGo'
+  },
+  {
+    caption: '2023 / UI DESIGN',
+    title: 'Dispence Go',
+    imagePath: 'DispenceGo/main.png',
+    pathName: 'DispenceGo'
+  },
+  {
+    caption: '2023 / UI DESIGN',
+    title: 'Dispence Go',
+    imagePath: 'DispenceGo/main.png',
+    pathName: 'DispenceGo'
+  },
+  {
+    caption: '2023 / UI DESIGN',
+    title: 'Dispence Go',
+    imagePath: 'DispenceGo/main.png',
+    pathName: 'DispenceGo'
+  },
 ]

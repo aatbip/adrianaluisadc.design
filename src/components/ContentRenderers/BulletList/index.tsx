@@ -6,9 +6,9 @@ export const BulletList = ({ bulletListItems }: { bulletListItems: string[] }) =
     <Box ml="20px">
       <ul>
         {
-          bulletListItems.map(el => {
+          bulletListItems.map((el, key) => {
             return (
-              <TypographyVariation2 variant="Body Reg">
+              <TypographyVariation2 key={key} variant="Body Reg">
                 <li style={{ marginTop: '20px' }}>{el}</li>
               </TypographyVariation2>
             )

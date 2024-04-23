@@ -28,7 +28,7 @@ export const SecondaryHeader = () => {
           fontSize: '48px',
           lineHeight: "60.48px",
         },
-      }} variant="heading1" fontWeight={300} lineHeight="126px" letterSpacing="-2px">Hi! I'm Adriana, a UX Designer who specializes in <BoldedText variant="heading1">User Interface, Design System,</BoldedText> & <BoldedText variant="heading1">Storytelling</BoldedText></TypographyWithPrimaryTextColor>
+      }} variant="heading1" fontWeight={300} lineHeight="126px" letterSpacing="-2px">Hi! I&apos;m Adriana, a UX Designer who specializes in <BoldedText variant="heading1">User Interface, Design System,</BoldedText> & <BoldedText variant="heading1">Storytelling</BoldedText></TypographyWithPrimaryTextColor>
 
       <Stack direction="row" columnGap={10} rowGap={10} p="64px 0px" sx={{
         borderBottom: (theme) => `1px solid ${theme.color.outline}`,

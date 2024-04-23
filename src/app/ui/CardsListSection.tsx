@@ -12,13 +12,13 @@ export const CardsListSection = ({ cardData, cardTitle, type }: { cardData: IBas
       <TypographyWithPrimaryTextColor variant="capsXlg">{cardTitle}</TypographyWithPrimaryTextColor>
       <Grid container rowSpacing={10} columnSpacing={5} mt="40px">
         {
-          cardData.map(data => {
+          cardData.map((data, key) => {
             return (
-              <Link href={`/${type === DetailsPageTypes.WORK ? 'work' : 'ui-studies'}/${data.pathName}`}>
-                <Grid xs={12} md={6} lg={4}>
+              <Grid key={key} xs={12} md={6} lg={4}>
+                <Link href={`/${type === DetailsPageTypes.WORK ? 'work' : 'ui-studies'}/${data.pathName}`}>
                   <BasicCard caption={data.caption} title={data.title} imagePath={data.imagePath} />
-                </Grid>
-              </Link>
+                </Link>
+              </Grid>
             )
           })
         }

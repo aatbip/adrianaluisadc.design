@@ -13,71 +13,71 @@ import { Box } from "@mui/material";
 export const RendererMatcher = ({ content }: { content: IContent }) => {
   return (
 
-    content.map(el => {
+    content.map((el, key) => {
 
       if (el.type === Renderer.MAIN_TITLE) {
-        return <MainTitle {...el} />
+        return <MainTitle key={key} {...el} />
 
       }
 
       if (el.type === Renderer.SECONDARY_TITLE) {
-        return <SecondaryTitle content={el.content} />
+        return <SecondaryTitle key={key} content={el.content} />
 
       }
 
       if (el.type === Renderer.PRIMARY_TITLE) {
-        return <PrimaryTitle content={el.content} />
+        return <PrimaryTitle key={key} content={el.content} />
 
       }
 
       if (el.type === Renderer.PARAGRAPH) {
-        return <Paragraph content={el.content} />
+        return <Paragraph key={key} content={el.content} />
 
       }
 
       if (el.type === Renderer.BULLET_LIST) {
-        return <BulletList bulletListItems={el.bulletListItems} />
+        return <BulletList key={key} bulletListItems={el.bulletListItems} />
 
       }
 
       if (el.type === Renderer.IMAGE_HOLDER) {
-        return <ImageHolder imagePath={el.imagePath} imageCaption={el.imageCaption} />
+        return <ImageHolder key={key} imagePath={el.imagePath} imageCaption={el.imageCaption} />
       }
 
       if (el.type === Renderer.BLOCK_RENDERER) {
-        return <BlockRenderer
+        return <BlockRenderer key={key}
           blockHeading={el.blockHeading}
           leftNode={
-            <Box>
+            <Box key={key}>
               {
-                el.leftNode.map(leftEl => {
+                el.leftNode.map((leftEl, key) => {
                   if (leftEl.type === Renderer.BLOCK_HEADER) {
-                    return <BlockHeader content={leftEl.content} />
+                    return <BlockHeader key={key} content={leftEl.content} />
                   }
                   if (leftEl.type === Renderer.BULLET_LIST) {
-                    return <BulletList bulletListItems={leftEl.bulletListItems} />
+                    return <BulletList key={key} bulletListItems={leftEl.bulletListItems} />
                   }
 
                   if (leftEl.type === Renderer.PARAGRAPH) {
-                    return <Paragraph content={leftEl.content} />
+                    return <Paragraph key={key} content={leftEl.content} />
                   }
                 })
               }
             </Box>
           }
           rightNode={
-            <Box>
+            <Box key={key}>
               {
-                el.rightNode.map(rightEl => {
+                el.rightNode.map((rightEl, key) => {
                   if (rightEl.type === Renderer.BLOCK_HEADER) {
-                    return <BlockHeader content={rightEl.content} />
+                    return <BlockHeader key={key} content={rightEl.content} />
                   }
                   if (rightEl.type === Renderer.BULLET_LIST) {
-                    return <BulletList bulletListItems={rightEl.bulletListItems} />
+                    return <BulletList key={key} bulletListItems={rightEl.bulletListItems} />
                   }
 
                   if (rightEl.type === Renderer.PARAGRAPH) {
-                    return <Box><Paragraph content={rightEl.content} /></Box>
+                    return <Box key={key}><Paragraph content={rightEl.content} /></Box>
                   }
                 })
               }
@@ -88,11 +88,11 @@ export const RendererMatcher = ({ content }: { content: IContent }) => {
 
 
       if (el.type === Renderer.HEADING_WITH_UNDERLINE) {
-        return <HeaderWithUnderline content={el.content} />
+        return <HeaderWithUnderline key={key} content={el.content} />
       }
 
       if (el.type === Renderer.BLOCK_HEADER) {
-        return <BlockHeader content={el.content} />
+        return <BlockHeader key={key} content={el.content} />
       }
 
     })

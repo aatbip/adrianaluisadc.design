@@ -6,5 +6,23 @@ export const works: IBasicCardProps[] = [
     title: 'Nepal Air Trip',
     imagePath: 'NepalAirTrip/banner.png',
     pathName: 'NepalAirTrip'
+  },
+  {
+    caption: '2023 / UI DESIGN',
+    title: 'Nepal Air Trip',
+    imagePath: 'NepalAirTrip/banner.png',
+    pathName: 'NepalAirTrip'
+  },
+  {
+    caption: '2023 / UI DESIGN',
+    title: 'Nepal Air Trip',
+    imagePath: 'NepalAirTrip/banner.png',
+    pathName: 'NepalAirTrip'
+  },
+  {
+    caption: '2023 / UI DESIGN',
+    title: 'Nepal Air Trip',
+    imagePath: 'NepalAirTrip/banner.png',
+    pathName: 'NepalAirTrip'
   }
 ]
