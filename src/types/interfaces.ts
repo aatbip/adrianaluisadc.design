@@ -5,7 +5,8 @@ export enum ThemeMode {
 
 export enum DetailsPageTypes {
   WORK = 'work',
-  UI_STUDIES = 'ui-studies'
+  UI_STUDIES = 'ui-studies',
+  CASE_STUDIES = 'case-studies'
 }
 
 export interface IBasicCardProps {

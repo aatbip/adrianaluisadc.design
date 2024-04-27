@@ -1,3 +1,5 @@
+'use client'
+
 import { BasicCard } from "@/components/Cards/BasicCard";
 import { TypographyWithPrimaryTextColor } from "@/components/Styled/TypographyWithPrimaryTextColor"
 import { DetailsPageTypes, IBasicCardProps } from "@/types/interfaces";

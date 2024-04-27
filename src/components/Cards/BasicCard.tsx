@@ -30,8 +30,8 @@ export const BasicCard = ({ caption, title, imagePath }: { caption: string; titl
         }}>
           <Image
             src={img}
-            width={1000}
-            height={1000}
+            width={2000}
+            height={2000}
             objectFit="cover"
             style={{
               width: '100%',

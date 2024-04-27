@@ -3,19 +3,19 @@ import { DetailsPageTypes } from "@/types/interfaces";
 import { Box } from "@mui/material";
 import { notFound } from "next/navigation";
 
+async function getFile(pathName: string) {
+  const file = await import(`./../../../data/${pathName}/content`);
+
+  const content = file.content;
+
+  return content;
+}
+
 export default async function DetailsPage(
   { params }: { params: { type: DetailsPageTypes, pathName: string; } }
 ) {
 
-  async function handler() {
-    const file = await import(`./../../../data/${params.pathName}/content`);
-
-    const content = file.content;
-
-    return content;
-  }
-
-  const content = await handler();
+  const content = await getFile(params.pathName)
 
   if (params.type === DetailsPageTypes.WORK) {
     return (

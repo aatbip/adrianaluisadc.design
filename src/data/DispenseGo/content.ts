@@ -3,7 +3,7 @@ import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWit
 
 export const content: IContent = [
   mainTitleCreator({
-    title: "Dispence Go",
+    title: "Dispense Go",
     ctaButton1Content: "SEE THIS PROJECT LIVE",
     ctaButton1Link: "link",
     ctaButton2Content: "UI SHOWCASE",
