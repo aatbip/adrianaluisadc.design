@@ -11,8 +11,10 @@ export const CardsListSection = ({ cardData, cardTitle, type }: { cardData: IBas
 
   return (
     <Box p="54px 0px">
-      <TypographyWithPrimaryTextColor variant="capsXlg">{cardTitle}</TypographyWithPrimaryTextColor>
-      <Grid container rowSpacing={10} columnSpacing={5} mt="40px">
+      <TypographyWithPrimaryTextColor variant="capsXlg" sx={{
+        letterSpacing:"4px"
+      }}>{cardTitle}</TypographyWithPrimaryTextColor>
+      <Grid container rowSpacing={10} columnSpacing={5} mt="40px" >
         {
           cardData.map((data, key) => {
             return (

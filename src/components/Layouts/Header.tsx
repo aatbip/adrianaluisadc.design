@@ -6,6 +6,7 @@ import { MoonBrightIcon, NavigationIcon, SunBrightIcon } from "@/icons"
 import { useAppState } from "@/hooks/useAppState"
 import { ThemeMode } from "@/types/interfaces"
 import { AnimateUnderline } from "../Styled/AnimateUnderline"
+import Link from "next/link"
 
 export const Header = () => {
   const appState = useAppState()
@@ -42,6 +43,7 @@ export const Header = () => {
         }}>
           <DynamicDisplayTypography variant="capsSm">UI Studies</DynamicDisplayTypography>
         </AnimateUnderline>
+        
         <AnimateUnderline className="link" sx={{
           '@media (max-width:600px)': {
             display: 'none'
@@ -49,6 +51,7 @@ export const Header = () => {
         }}>
           <DynamicDisplayTypography variant="capsSm">About Me</DynamicDisplayTypography>
         </AnimateUnderline>
+        <Link href={"https://linkedin.com/in/adrianaluisadc"} target="__blank">
         <AnimateUnderline className="link" sx={{
           '@media (max-width:768px)': {
             display: 'none'
@@ -56,6 +59,8 @@ export const Header = () => {
         }}>
           <TypographyWithSecondaryTextColor variant="capsSm">LinkedIn</TypographyWithSecondaryTextColor>
         </AnimateUnderline>
+        </Link>
+        <Link href={"https://www.behance.net/adrianaluisadc"} target="__blank">
         <AnimateUnderline className="link" sx={{
           '@media (max-width:768px)': {
             display: 'none'
@@ -63,6 +68,7 @@ export const Header = () => {
         }}>
           <TypographyWithSecondaryTextColor variant="capsSm">Behance</TypographyWithSecondaryTextColor>
         </AnimateUnderline>
+        </Link>
         <Box className="link" onClick={() => appState?.setAppState(prev => ({ ...prev, themeMode: appState?.themeMode === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK }))} sx={{
           '@media (max-width:768px)': {
             display: 'none'

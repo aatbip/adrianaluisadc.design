@@ -28,14 +28,12 @@ export const BasicCard = ({ caption, title, imagePath }: { caption: string; titl
           transition: 'transform 0.2s',
           transform: hovered ? 'scale(1.05)' : ''
         }}>
-          <Image
+          <img
             src={img}
-            width={2000}
-            height={2000}
-            objectFit="cover"
             style={{
               width: '100%',
               height: '100%',
+              objectFit: "cover"
             }}
             alt="work"
           />
