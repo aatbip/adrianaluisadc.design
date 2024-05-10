@@ -34,8 +34,9 @@ export const SecondaryHeader = () => {
         borderBottom: (theme) => `1px solid ${theme.color.outline}`,
         flexWrap: 'wrap'
       }} ref={targetRef} >
-        <CTAButton content="WORKS" handleClick={() => { }} />
-        <CTAButton content="UI STUDIES" handleClick={() => { }} />
+        <CTAButton content="ALL WORKS" handleClick={() => { }} />
+        <CTAButton content="CASE STUDIES" handleClick={() => { }} />
+        <CTAButton content="UI EXPLORATIONS" handleClick={() => { }} />
         <CTAButton content="ABOUT ME" handleClick={() => { }} />
       </Stack>
     </Box>

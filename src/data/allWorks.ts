@@ -1,6 +1,6 @@
 import { IBasicCardProps } from "@/types/interfaces"
 
-export const works: IBasicCardProps[] = [
+export const allWorks: IBasicCardProps[] = [
   {
     caption: '2023 / UI DESIGN',
     title: 'Boxy Fighters Platform',
