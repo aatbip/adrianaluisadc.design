@@ -2,9 +2,17 @@ import { IBasicCardProps } from "@/types/interfaces"
 
 export const caseStudies: IBasicCardProps[] = [
   {
-    caption: 'Case Study 1',
-    title: 'NAT',
-    imagePath: 'CaseStudyNepalAirTrip/banner.png',
+    caption: '2023/UI DESIGN',
+    title: "Revisioning Nepal Air Trip's Homepage",
+    imagePath: 'CaseStudyNepalAirTrip/cover.png',
     pathName: 'NepalAirTrip'
   },
+
+  {
+    caption: '2024/MOBILE APP/UX DESIGN',
+    title: "Timeout Time Travel App",
+    imagePath: 'Timeout/Cover.png',
+    pathName: 'Timeout'
+  },
+
 ]

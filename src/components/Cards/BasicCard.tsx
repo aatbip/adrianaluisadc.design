@@ -19,7 +19,7 @@ export const BasicCard = ({ caption, title, imagePath }: { caption: string; titl
     <Box className="link" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
       sx={{
         position: 'relative',
-        overflow: 'hidden'
+        // overflow: 'hidden'
       }}
     >
       {
@@ -33,13 +33,14 @@ export const BasicCard = ({ caption, title, imagePath }: { caption: string; titl
             style={{
               width: '100%',
               height: '100%',
-              objectFit: "cover"
+              objectFit: "cover",
+              borderRadius: "24px"
             }}
             alt="work"
           />
         </Box>
       }
-      <Stack direction="column">
+      <Stack direction="column" mt="1px">
         <TypographyWithSecondaryTextColor variant="capsSm">{caption}</TypographyWithSecondaryTextColor>
         <TypographyWithPrimaryTextColor variant="heading6">{title}</TypographyWithPrimaryTextColor>
       </Stack>
