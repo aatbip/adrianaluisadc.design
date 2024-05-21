@@ -41,7 +41,7 @@ export const BasicCard = ({ caption, title, imagePath }: { caption: string; titl
         </Box>
       }
       <Stack direction="column" mt="1px">
-        <TypographyWithSecondaryTextColor variant="capsSm">{caption}</TypographyWithSecondaryTextColor>
+        <TypographyWithSecondaryTextColor variant="capsSm" marginTop="8px">{caption}</TypographyWithSecondaryTextColor>
         <TypographyWithPrimaryTextColor variant="heading6">{title}</TypographyWithPrimaryTextColor>
       </Stack>
     </Box>
