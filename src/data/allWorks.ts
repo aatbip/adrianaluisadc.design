@@ -7,12 +7,7 @@ export const allWorks: IBasicCardProps[] = [
     imagePath: 'Boxy/banner.png',
     pathName: 'Boxy'
   },
-  {
-    caption: '2023 / UI DESIGN',
-    title: 'Nepal Air Trip',
-    imagePath: 'NepalAirTrip/banner.png',
-    pathName: 'NepalAirTrip'
-  },
+
   {
     caption: '2023 / Branding',
     title: 'Charity Ball',
@@ -42,5 +37,12 @@ export const allWorks: IBasicCardProps[] = [
     title: 'Spendidly',
     imagePath: 'Spendidly/banner.png',
     pathName: 'Spendidly'
-  }
+  },
+
+  {
+    caption: '2022 / BRAND DESIGN',
+    title: 'Nepal Air Trip Brand Guidelines',
+    imagePath: 'NepalAirTripBrand/Cover.png',
+    pathName: 'NepalAirTripBrand'
+  },
 ]

@@ -10,19 +10,28 @@ export default function Layout({
   children: React.ReactNode;
   params: { type: DetailsPageTypes; }
 }>) {
-  if (params.type === DetailsPageTypes.WORK) {
+  if (params.type === DetailsPageTypes.ALL_WORKS) {
     return (
       <DetailsPageMargin>
-        <DetailsPageNameHeader name="Works" />
+        <DetailsPageNameHeader name="All Works" />
         {children}
       </DetailsPageMargin>
     )
   }
 
-  else if (params.type === DetailsPageTypes.UI_STUDIES) {
+  else if (params.type === DetailsPageTypes.UI_EXPLORATIONS) {
     return (
       <DetailsPageMargin>
-        <DetailsPageNameHeader name="UI Studies" />
+        <DetailsPageNameHeader name="UI Explorations" />
+        {children}
+      </DetailsPageMargin>
+    )
+  }
+
+  else if (params.type === DetailsPageTypes.CASE_STUDIES) {
+    return (
+      <DetailsPageMargin>
+        <DetailsPageNameHeader name="Case Studies" />
         {children}
       </DetailsPageMargin>
     )

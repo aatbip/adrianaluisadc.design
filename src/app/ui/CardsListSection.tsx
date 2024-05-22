@@ -19,7 +19,7 @@ export const CardsListSection = ({ cardData, cardTitle, type }: { cardData: IBas
           cardData.map((data, key) => {
             return (
               <Grid key={key} xs={12} md={6} lg={4}>
-                <Link href={`/${type === DetailsPageTypes.WORK ? 'work' : 'ui-studies'}/${data.pathName}`}>
+                <Link href={`/${type === DetailsPageTypes.ALL_WORKS ? 'all-works' : type === DetailsPageTypes.CASE_STUDIES ? 'case-studies' : 'ui-explorations'}/${data.pathName}`}>
                   <BasicCard caption={data.caption} title={data.title} imagePath={data.imagePath} />
                 </Link>
               </Grid>

@@ -17,7 +17,7 @@ export default async function DetailsPage(
 
   const content = await getFile(params.pathName)
 
-  if (params.type === DetailsPageTypes.WORK) {
+  if (params.type === DetailsPageTypes.ALL_WORKS) {
     return (
       <Box pb="20px" minHeight="80vh">
         <RendererMatcher content={content} />
@@ -25,7 +25,15 @@ export default async function DetailsPage(
     )
   }
 
-  else if (params.type === DetailsPageTypes.UI_STUDIES) {
+  else if (params.type === DetailsPageTypes.UI_EXPLORATIONS) {
+    return (
+      <Box pb="20px" minHeight="80vh">
+        <RendererMatcher content={content} />
+      </Box>
+    )
+  }
+
+  else if (params.type === DetailsPageTypes.CASE_STUDIES) {
     return (
       <Box pb="20px" minHeight="80vh">
         <RendererMatcher content={content} />

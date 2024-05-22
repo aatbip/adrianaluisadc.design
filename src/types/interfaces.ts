@@ -4,8 +4,8 @@ export enum ThemeMode {
 }
 
 export enum DetailsPageTypes {
-  WORK = 'work',
-  UI_STUDIES = 'ui-studies',
+  ALL_WORKS = 'all-works',
+  UI_EXPLORATIONS = 'ui-explorations',
   CASE_STUDIES = 'case-studies'
 }
 
