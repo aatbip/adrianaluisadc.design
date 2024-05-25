@@ -11,11 +11,11 @@ export default function Page() {
     <>
       <SecondaryHeader />
       <CardsListSection cardData={caseStudies} cardTitle={'Case Studies'} type={DetailsPageTypes.CASE_STUDIES} />
-      <StyledDivider/>
+      <StyledDivider />
       <CardsListSection cardData={allWorks} cardTitle={'All Works'} type={DetailsPageTypes.ALL_WORKS} />
-      <StyledDivider/>
+      <StyledDivider />
       <CardsListSection cardData={uiExplorations} cardTitle={'UI Explorations'} type={DetailsPageTypes.UI_EXPLORATIONS} />
-      <StyledDivider/>
+      <StyledDivider />
     </>
   );
 }

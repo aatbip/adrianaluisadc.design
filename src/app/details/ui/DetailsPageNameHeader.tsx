@@ -1,3 +1,5 @@
+'use client'
+
 import { ColoredArrowBack } from "@/components/Styled/ColoredArrow"
 import { TypographyWithPrimaryTextColor } from "@/components/Styled/TypographyWithPrimaryTextColor"
 import { Stack, Box } from "@mui/material"

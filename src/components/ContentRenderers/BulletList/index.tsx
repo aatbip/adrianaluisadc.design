@@ -1,3 +1,5 @@
+'use client'
+
 import { TypographyVariation2 } from "@/components/Styled/TypographyVariation2"
 import { Box } from "@mui/material"
 

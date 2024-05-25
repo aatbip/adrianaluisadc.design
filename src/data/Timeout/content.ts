@@ -25,7 +25,7 @@ export const content: IContent = [
   paragraphCreator({
     content: "This project was my entry for the UX Protothon 2024 Space & Time Travel Track, hosted by Dubstech at the University of Washington in collaboration with Design Buddies."
   }),
-  
+
 
   secondaryTitleCreator({
     content: "Achievement"

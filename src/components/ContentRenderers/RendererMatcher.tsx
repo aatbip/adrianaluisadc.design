@@ -1,3 +1,5 @@
+'use client'
+
 import { BlockRenderer } from "@/components/ContentRenderers/Block";
 import { BlockHeader } from "@/components/ContentRenderers/BlockHeader";
 import { BulletList } from "@/components/ContentRenderers/BulletList";
@@ -8,94 +10,73 @@ import { Paragraph } from "@/components/ContentRenderers/Paragraph";
 import { PrimaryTitle } from "@/components/ContentRenderers/PrimaryTitle";
 import { SecondaryTitle } from "@/components/ContentRenderers/SecondaryTitle";
 import { IContent, Renderer } from "@/types/contentRendererTypes";
-import { Box } from "@mui/material";
 
 export const RendererMatcher = ({ content }: { content: IContent }) => {
-  return (
 
-    content.map((el, key) => {
+  return content.map((el, key) => {
 
-      if (el.type === Renderer.MAIN_TITLE) {
-        return <MainTitle key={key} {...el} />
+    if (el.type === Renderer.MAIN_TITLE) {
+      return <MainTitle key={key}
+        type={el.type}
+        title={el.title}
+        ctaButton1Link={el.ctaButton1Link}
+        ctaButton2Link={el.ctaButton2Link}
+        ctaButton1Content={el.ctaButton1Content}
+        ctaButton2Content={el.ctaButton2Content}
+      />
 
-      }
+    }
 
-      if (el.type === Renderer.SECONDARY_TITLE) {
-        return <SecondaryTitle key={key} content={el.content} />
+    if (el.type === Renderer.SECONDARY_TITLE) {
+      return <SecondaryTitle
+        type={el.type}
+        key={key}
+        content={el.content}
+      />
 
-      }
+    }
 
-      if (el.type === Renderer.PRIMARY_TITLE) {
-        return <PrimaryTitle key={key} content={el.content} />
+    if (el.type === Renderer.PRIMARY_TITLE) {
+      return <PrimaryTitle key={key} content={el.content} />
 
-      }
+    }
 
-      if (el.type === Renderer.PARAGRAPH) {
-        return <Paragraph key={key} content={el.content} />
+    if (el.type === Renderer.PARAGRAPH) {
+      return <Paragraph key={key} content={el.content} />
 
-      }
+    }
 
-      if (el.type === Renderer.BULLET_LIST) {
-        return <BulletList key={key} bulletListItems={el.bulletListItems} />
+    if (el.type === Renderer.BULLET_LIST) {
+      return <BulletList key={key} bulletListItems={el.bulletListItems} />
 
-      }
+    }
 
-      if (el.type === Renderer.IMAGE_HOLDER) {
-        return <ImageHolder key={key} imagePath={el.imagePath} imageCaption={el.imageCaption} />
-      }
+    if (el.type === Renderer.IMAGE_HOLDER) {
+      return <ImageHolder key={key} imagePath={el.imagePath} imageCaption={el.imageCaption} />
+    }
 
-      if (el.type === Renderer.BLOCK_RENDERER) {
-        return <BlockRenderer key={key}
-          blockHeading={el.blockHeading}
-          leftNode={
-            <Box key={key}>
-              {
-                el.leftNode.map((leftEl, key) => {
-                  if (leftEl.type === Renderer.BLOCK_HEADER) {
-                    return <BlockHeader key={key} content={leftEl.content} />
-                  }
-                  if (leftEl.type === Renderer.BULLET_LIST) {
-                    return <BulletList key={key} bulletListItems={leftEl.bulletListItems} />
-                  }
-
-                  if (leftEl.type === Renderer.PARAGRAPH) {
-                    return <Paragraph key={key} content={leftEl.content} />
-                  }
-                })
-              }
-            </Box>
-          }
-          rightNode={
-            <Box key={key}>
-              {
-                el.rightNode.map((rightEl, key) => {
-                  if (rightEl.type === Renderer.BLOCK_HEADER) {
-                    return <BlockHeader key={key} content={rightEl.content} />
-                  }
-                  if (rightEl.type === Renderer.BULLET_LIST) {
-                    return <BulletList key={key} bulletListItems={rightEl.bulletListItems} />
-                  }
-
-                  if (rightEl.type === Renderer.PARAGRAPH) {
-                    return <Box key={key}><Paragraph content={rightEl.content} /></Box>
-                  }
-                })
-              }
-            </Box>
-          }
-        />
-      }
+    if (el.type === Renderer.BLOCK_RENDERER) {
+      return <BlockRenderer key={key}
+        blockHeading={el.blockHeading}
+        leftNode={
+          el.leftNode
+        }
+        rightNode={
+          el.rightNode
+        }
+        type={el.type}
+      />
+    }
 
 
-      if (el.type === Renderer.HEADING_WITH_UNDERLINE) {
-        return <HeaderWithUnderline key={key} content={el.content} />
-      }
+    if (el.type === Renderer.HEADING_WITH_UNDERLINE) {
+      return <HeaderWithUnderline key={key} content={el.content} />
+    }
 
-      if (el.type === Renderer.BLOCK_HEADER) {
-        return <BlockHeader key={key} content={el.content} />
-      }
+    if (el.type === Renderer.BLOCK_HEADER) {
+      return <BlockHeader key={key} content={el.content} />
+    }
 
-    })
+  })
 
-  )
 }
