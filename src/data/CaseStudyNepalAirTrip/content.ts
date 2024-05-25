@@ -41,7 +41,7 @@ export const content: IContent = [
 
   imageHolderCreator({
     imagePath: "CaseStudyNepalAirTrip/design-process.png",
-    imageCaption: "THE DESIGN PROCESS. This is a caption holder. I write my caption here about the image."
+    // imageCaption: "THE DESIGN PROCESS. This is a caption holder. I write my caption here about the image."
   }),
 
   primaryTitleCreator({

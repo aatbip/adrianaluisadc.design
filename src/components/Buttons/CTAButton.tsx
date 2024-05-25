@@ -26,6 +26,7 @@ export const CTAButton = ({ content, handleClick }: Prop) => {
         className="link"
       >
         <TypographyWithSecondaryTextColor
+        variant="capsMd"
           sx={{
             color: (theme) =>
               isHovered ? theme.color.text.primary : theme.color.text.secondary,

@@ -107,7 +107,7 @@ export const darkTheme = createTheme({
     },
     capsMd: {
       fontFamily: uncutSans.style.fontFamily,
-      fontSize: '20px',
+      fontSize: '18px',
       fontStyle: 'normal',
       fontWeight: 500,
       textTransform: 'uppercase'
