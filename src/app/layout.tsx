@@ -6,6 +6,7 @@ import { AppBackground } from "@/hoc/AppBackground";
 import { AppMargin } from "@/hoc/AppMargin";
 import { Header } from "@/components/Layouts/Header";
 import { AppContextProvider } from "@/context";
+import { CursorExtension } from "@/hoc/CursorExtension";
 
 export const metadata: Metadata = {
   title: "adrianaluisadc.design",
@@ -21,14 +22,16 @@ export default function RootLayout({
     <html lang="en">
       <AppContextProvider>
         <body className={`${neueRegrade.className} ${uncutSans.className}`}>
-          <ThemeRegistry options={{ key: 'mui' }}>
-            <AppBackground>
-              <AppMargin>
-                <Header />
-                {children}
-              </AppMargin>
-            </AppBackground>
-          </ThemeRegistry>
+          <CursorExtension>
+            <ThemeRegistry options={{ key: 'mui' }}>
+              <AppBackground>
+                <AppMargin>
+                  <Header />
+                  {children}
+                </AppMargin>
+              </AppBackground>
+            </ThemeRegistry>
+          </CursorExtension>
         </body>
       </AppContextProvider>
     </html>
