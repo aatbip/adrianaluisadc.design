@@ -18,8 +18,12 @@ export const CursorExtension = ({ children }: { children: ReactNode }) => {
       innerScale={0.7}
       outerScale={7}
       outerStyle={{
-        mixBlendMode: 'exclusion'
+        mixBlendMode: 'exclusion',
+        zIndex: 1000
       }}
+   innerStyle={{
+    zIndex: 1000
+   }}
     />
     {children}
   </>

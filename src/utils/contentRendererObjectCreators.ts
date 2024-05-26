@@ -42,11 +42,12 @@ export function bulletListCreator({ bulletListItems }: Omit<IBulletList, "type">
   }
 }
 
-export function imageHolderCreator({ imagePath, imageCaption }: Omit<IImageHolder, "type">): IImageHolder {
+export function imageHolderCreator({ imagePath, imageCaption, noMargin }: Omit<IImageHolder, "type">): IImageHolder {
   return {
     type: Renderer.IMAGE_HOLDER,
     imagePath,
-    imageCaption
+    imageCaption,
+    noMargin
   }
 }
 

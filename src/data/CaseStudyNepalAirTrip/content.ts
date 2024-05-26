@@ -4,10 +4,10 @@ import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWit
 export const content: IContent = [
   mainTitleCreator({
     title: "Nepal Air Trip Case Study",
-    ctaButton1Content: "SEE THIS PROJECT LIVE",
-    ctaButton1Link: "https://google.com",
-    ctaButton2Content: "UI SHOWCASE",
-    ctaButton2Link: "link"
+    ctaButton1Content: "VIEW PROTOTYPE",
+    ctaButton1Link: "https://www.figma.com/proto/wG6SEadmUL6CF5bLcSvATE/DESIGN-HANDOFF-(Copy)-(Copy)?page-id=8%3A72138&node-id=8-76386&viewport=680%2C776%2C0.12&t=33VXokkuh5GRMqCE-1&scaling=min-zoom&starting-point-node-id=8%3A76386&show-proto-sidebar=1",
+    // ctaButton2Content: "UI SHOWCASE",
+    // ctaButton2Link: "link"
   }),
 
   secondaryTitleCreator({

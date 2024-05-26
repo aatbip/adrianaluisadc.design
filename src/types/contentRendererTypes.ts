@@ -43,6 +43,7 @@ export interface IImageHolder {
   type: Renderer.IMAGE_HOLDER;
   imagePath: string;
   imageCaption?: string;
+  noMargin?: boolean;
 }
 
 export interface IBlockRenderer {

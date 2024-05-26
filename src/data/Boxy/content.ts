@@ -1,3 +1,4 @@
+import { BulletList } from "@/components/ContentRenderers/BulletList";
 import { IContent } from "@/types/contentRendererTypes";
 import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWithUnderlineCreator, imageHolderCreator, mainTitleCreator, paragraphCreator, primaryTitleCreator, secondaryTitleCreator } from "@/utils/contentRendererObjectCreators";
 
@@ -6,12 +7,18 @@ export const content: IContent = [
     title: "Boxy: Fighter's Platform",
     ctaButton1Content: "UI SHOWCASE",
     ctaButton1Link: "https://www.behance.net/gallery/195112499/Boxy-A-Platfom-for-Boxers",
-    ctaButton2Content: "SEE THIS PROJECT LIVE",
-    ctaButton2Link: "https://boxy.com"
+    // ctaButton2Content: "SEE THIS PROJECT LIVE",
+    // ctaButton2Link: "https://boxy.com"
   }),
 
+  
   secondaryTitleCreator({
     content: "PROJECT OVERVIEW"
+  }),
+
+  paragraphCreator({
+    content: "Boxy is an innovative web application designed to connect users with professional fighters for coaching, enable fighters to offer their services, and provide businesses with advanced AI tools to predict social media engagement and access a comprehensive fighter database. The goal is to create a seamless, user-friendly experience for all stakeholders in the combat sports industry."
+  
   }),
 
   imageHolderCreator({
@@ -19,79 +26,90 @@ export const content: IContent = [
   }),
 
 
-  paragraphCreator({
-    content: "Boxy is an innovative web application designed to connect users with professional fighters for coaching, enable fighters to offer their services, and provide businesses with advanced AI tools to predict social media engagement and access a comprehensive fighter database. The goal is to create a seamless, user-friendly experience for all stakeholders in the combat sports industry."
-  }),
-
   secondaryTitleCreator({
-    content: "Problem Statement"
+    content: "My Role"
   }),
   paragraphCreator({
-    content: "In the world of combat sports, connecting fighters, coaches, and businesses effectively can be challenging. Fighters need a platform to offer their services, users need reliable ways to book legitimate fighters, and businesses require tools to predict social media engagement and access detailed fighter information. Boxy addresses these needs by providing an integrated solution."
+    content: "As one of the UI Designer for Boxy, I was in charge of the leading the profile dashboard. This crucial feature allows users to:"
   }),
 
+  bulletListCreator({
+    bulletListItems: [
+      "Edit their bio",
+      "Add highlight videos",
+      "Link social media accounts",
+      "Share personal stories",
+      "Validate account verification",
+      "Add and manage fight records",
+    ]
+  }),
   // secondaryTitleCreator({
-  //   content: "Key Features"
+  //   content: "DESIGN SHOWCASE"
   // }),
 
-  // blockRendererCreator({
-  //   blockHeading: "1. Fighters' Profiles",
-  //   leftNode: [
-  //     // blockHeaderCreator({
-  //     //   content: "Observation"
-  //     // }),
-  //     bulletListCreator({
-  //       bulletListItems: [
-  //         "Find fighters across database of fighters",
-  //         "Multimedia galleries showcasing fights, training highlights, and achievements",
-  //         "Verified fighters are marked with badges according to their fighter score",
-  //       ]
-  //     })
-  //   ],
-  //   rightNode: [
-  //     blockHeaderCreator({
-  //       content: "2. Advanced AI Tools for Businesses"
-  //     }),
-  //     bulletListCreator({
-  //       bulletListItems: [
-  //         "AI-driven insights to forecast social media engagement and optimize content strategies",
-  //         "Predictive analytics to forecast social media engagement for fighter posts",
-  //         "Calculate fighter's score and comparative analysis to other fighters",
-      
-  //       ]
-  //     })
-  //   ]
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/15.png",
+  //   noMargin: false
   // }),
 
-  // blockRendererCreator({
-  //   blockHeading: "2. Advanced AI Tools for Businesses",
-  //   leftNode: [
-  //     // blockHeaderCreator({
-  //     //   content: "Observation"
-  //     // }),
-  //     bulletListCreator({
-  //       bulletListItems: [
-  //        "AI-driven insights to forecast social media engagement and optimize content strategies",
-  //         "Predictive analytics to forecast social media engagement for fighter posts",
-  //         "Calculate fighter's score and comparative analysis to other fighters",
-  //       ]
-  //     })
-  //   ],
-  //   rightNode: [
-  //     blockHeaderCreator({
-  //       content: "2. Advanced AI Tools for Businesses"
-  //     }),
-  //     bulletListCreator({
-  //       bulletListItems: [
-  //         "AI-driven insights to forecast social media engagement and optimize content strategies",
-  //         "Predictive analytics to forecast social media engagement for fighter posts",
-  //         "Calculate fighter's score and comparative analysis to other fighters",
-      
-  //       ]
-  //     })
-  //   ]
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/14.png",
+  //   noMargin: true
   // }),
 
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/13.png",
+  //   noMargin: true
+  // }),
+
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/12.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/11.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/10.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/09.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/08.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/07.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/06.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/05.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/04.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/03.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/02.png",
+  //   noMargin: true
+  // }),
+  // imageHolderCreator({
+  //   imagePath: "CharityBall/01.png",
+  //   noMargin: true
+  // }),
 
 ]
 

@@ -5,7 +5,7 @@ import { TypographyVariation2 } from "@/components/Styled/TypographyVariation2"
 import { Box, Stack } from "@mui/material"
 import Image from 'next/image';
 
-export const ImageHolder = ({ imagePath, imageCaption }: { imagePath: string; imageCaption?: string; }) => {
+export const ImageHolder = ({ imagePath, imageCaption, noMargin }: { imagePath: string; imageCaption?: string;noMargin?: boolean; }) => {
 
   const [img, setImg] = useState<string | null>(null);
 
@@ -14,7 +14,7 @@ export const ImageHolder = ({ imagePath, imageCaption }: { imagePath: string; im
   }, [imagePath])
 
   return (
-    <Box mb="40px">
+    <Box mb={noMargin && '40px' || '0px'}>
       <Stack direction="column" rowGap={4}>
         {img && (
           <Image
