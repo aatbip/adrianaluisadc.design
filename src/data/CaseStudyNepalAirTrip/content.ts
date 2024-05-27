@@ -224,6 +224,31 @@ export const content: IContent = [
 
   primaryTitleCreator({
     content: "High-Fidelity"
-  })
+  }),
+
+  imageHolderCreator({
+    imagePath: "CaseStudyNepalAirTrip/01.png"
+  }),
+  imageHolderCreator({
+    imagePath: "CaseStudyNepalAirTrip/02.png"
+  }),
+  imageHolderCreator({
+    imagePath: "CaseStudyNepalAirTrip/03.png"
+  }),
+  imageHolderCreator({
+    imagePath: "CaseStudyNepalAirTrip/04.png"
+  }),
+  imageHolderCreator({
+    imagePath: "CaseStudyNepalAirTrip/05.png"
+  }),
+  imageHolderCreator({
+    imagePath: "CaseStudyNepalAirTrip/06.png"
+  }),
+  imageHolderCreator({
+    imagePath: "CaseStudyNepalAirTrip/07.png"
+  }),
+  imageHolderCreator({
+    imagePath: "CaseStudyNepalAirTrip/08.png"
+  }),
 ]
 
