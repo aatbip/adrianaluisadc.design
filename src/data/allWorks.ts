@@ -32,12 +32,12 @@ export const allWorks: IBasicCardProps[] = [
     imagePath: 'GSweet/banner.png',
     pathName: 'GSweet'
   },
-  // {
-  //   caption: '2023 / Branding',
-  //   title: 'Spendidly',
-  //   imagePath: 'Spendidly/banner.png',
-  //   pathName: 'Spendidly'
-  // },
+  {
+    caption: '2023 / Branding',
+    title: 'Spendidly',
+    imagePath: 'Spendidly/banner.png',
+    pathName: 'Spendidly' 
+  },
 
   {
     caption: '2022 / BRAND DESIGN',

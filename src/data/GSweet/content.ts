@@ -104,7 +104,7 @@ export const content: IContent = [
       noMargin: true
     }),
     imageHolderCreator({
-      imagePath: "GSweet/G18.png",
+      imagePath: "GSweet/G19.png",
       noMargin: true
     }),
     imageHolderCreator({
