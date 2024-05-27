@@ -28,7 +28,7 @@ export const ImageHolder = ({ imagePath, imageCaption, noMargin }: { imagePath: 
             width={800}
             height={800}
             loading="lazy"
-            placeholder="blur"
+            
             quality={100}
           />
         )}
