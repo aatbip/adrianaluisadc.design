@@ -5,13 +5,14 @@ import { TypographyVariation2 } from "@/components/Styled/TypographyVariation2"
 import { Box, Stack } from "@mui/material"
 import Image from 'next/image';
 
-export const ImageHolder = ({ imagePath, imageCaption, noMargin }: { imagePath: string; imageCaption?: string;noMargin?: boolean; }) => {
+export const ImageHolder = ({ imagePath, imageCaption, noMargin }: { imagePath: string; imageCaption?: string; noMargin?: boolean; }) => {
 
   const [img, setImg] = useState<string | null>(null);
 
   useEffect(() => {
     import(`./../../../data/${imagePath}`).then(img => setImg(img.default.src))
   }, [imagePath])
+
 
   return (
     <Box mb={noMargin && '40px' || '0px'}>
@@ -24,8 +25,11 @@ export const ImageHolder = ({ imagePath, imageCaption, noMargin }: { imagePath: 
               height: 'auto'
             }}
             alt="adc-images"
-            width={1000}
-            height={1000}
+            width={800}
+            height={800}
+            loading="lazy"
+            placeholder="blur"
+            quality={100}
           />
         )}
         {imageCaption && (

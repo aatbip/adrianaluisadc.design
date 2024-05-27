@@ -1,5 +1,3 @@
-'use client'
-
 import { BlockRenderer } from "@/components/ContentRenderers/Block";
 import { BlockHeader } from "@/components/ContentRenderers/BlockHeader";
 import { BulletList } from "@/components/ContentRenderers/BulletList";

@@ -28,15 +28,16 @@ export const BasicCard = ({ caption, title, imagePath }: { caption: string; titl
           transition: 'transform 0.2s',
           transform: hovered ? 'scale(1.05)' : ''
         }}>
-          <img
+          <Image
             src={img}
             style={{
               width: '100%',
-              height: '100%',
               objectFit: "cover",
               borderRadius: "24px"
             }}
-            alt="work"
+            width={426}
+            height={320}
+            alt={title}
           />
         </Box>
       }
