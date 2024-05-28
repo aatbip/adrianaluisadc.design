@@ -1,5 +1,11 @@
-import { IBlockHeader, IBlockRenderer, IBulletList, IHeadingWithUnderline, IImageHolder, IMainTitle, IParagraph, IPrimaryTitle, ISecondaryTitle, Renderer } from "@/types/contentRendererTypes";
+import { IBlockHeader, IBlockRenderer, IBulletList, IHeadingWithUnderline, IIframeComponent, IImageHolder, IMainTitle, IParagraph, IPrimaryTitle, ISecondaryTitle, Renderer } from "@/types/contentRendererTypes";
 
+export function iframeCreator({ link }: Omit<IIframeComponent, "type">): IIframeComponent {
+  return {
+    type: Renderer.IFRAME_COMPONENT,
+    link
+  }
+}
 export function mainTitleCreator(
   { title, ctaButton1Link, ctaButton2Link, ctaButton1Content, ctaButton2Content }: Omit<IMainTitle, "type">
 ): IMainTitle {

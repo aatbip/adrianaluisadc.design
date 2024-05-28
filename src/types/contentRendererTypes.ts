@@ -7,7 +7,8 @@ export enum Renderer {
   IMAGE_HOLDER,
   BLOCK_RENDERER,
   HEADING_WITH_UNDERLINE,
-  BLOCK_HEADER
+  BLOCK_HEADER,
+  IFRAME_COMPONENT
 }
 
 export interface IMainTitle {
@@ -63,5 +64,10 @@ export interface IBlockHeader {
   content: string;
 }
 
-export type IContent = (IParagraph | IBulletList | IBlockHeader | IImageHolder | IMainTitle | ISecondaryTitle | IPrimaryTitle | IHeadingWithUnderline | IImageHolder | IBlockRenderer)[]
+export interface IIframeComponent {
+  type: Renderer.IFRAME_COMPONENT;
+  link: string;
+}
+
+export type IContent = (IParagraph | IBulletList | IBlockHeader | IImageHolder | IMainTitle | ISecondaryTitle | IPrimaryTitle | IHeadingWithUnderline | IImageHolder | IBlockRenderer | IIframeComponent)[]
 

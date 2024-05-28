@@ -10,11 +10,11 @@ export default function Page() {
   return (
     <>
       <SecondaryHeader />
-      <CardsListSection cardData={caseStudies} cardTitle={'Case Studies'} type={DetailsPageTypes.CASE_STUDIES} />
+      <CardsListSection id={DetailsPageTypes.CASE_STUDIES} cardData={caseStudies} cardTitle={'Case Studies'} type={DetailsPageTypes.CASE_STUDIES} />
       <StyledDivider />
-      <CardsListSection cardData={allWorks} cardTitle={'All Works'} type={DetailsPageTypes.ALL_WORKS} />
+      <CardsListSection id={DetailsPageTypes.ALL_WORKS} cardData={allWorks} cardTitle={'All Works'} type={DetailsPageTypes.ALL_WORKS} />
       <StyledDivider />
-      <CardsListSection cardData={uiExplorations} cardTitle={'UI Explorations'} type={DetailsPageTypes.UI_EXPLORATIONS} />
+      <CardsListSection id={DetailsPageTypes.UI_EXPLORATIONS} cardData={uiExplorations} cardTitle={'UI Explorations'} type={DetailsPageTypes.UI_EXPLORATIONS} />
       <StyledDivider />
     </>
   );

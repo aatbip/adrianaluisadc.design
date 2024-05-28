@@ -26,7 +26,9 @@ export const Header = () => {
       background: (theme) => theme.color.background.primary,
       mb: '34px'
     }} alignItems="center">
-      <TypographyWithSecondaryTextColor variant="capsSm">Adriana Luisa Dela Cruz <span style={{ margin: '0px 12px' }}>&#x2022;</span>UX Designer</TypographyWithSecondaryTextColor>
+      <Link href="/">
+      <TypographyWithSecondaryTextColor variant="capsSm">Adriana Luisa Dela Cruz <span style={{ margin: '0px 12px' }}>&#x2022;</span>UX Designer</TypographyWithSecondaryTextColor>        
+      </Link>
 
       <Stack direction="row" columnGap={10}>
         <AnimateUnderline className="link" sx={{

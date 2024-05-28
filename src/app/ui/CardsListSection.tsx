@@ -7,7 +7,7 @@ import { Box } from "@mui/material"
 import Grid from '@mui/material/Unstable_Grid2';
 import { useRouter } from "next/navigation";
 
-export const CardsListSection = ({ cardData, cardTitle, type }: { cardData: IBasicCardProps[], cardTitle: string; type: DetailsPageTypes }) => {
+export const CardsListSection = ({ cardData, cardTitle, type, id }: {id: string; cardData: IBasicCardProps[], cardTitle: string; type: DetailsPageTypes }) => {
 
   const router = useRouter()
 
@@ -16,7 +16,7 @@ export const CardsListSection = ({ cardData, cardTitle, type }: { cardData: IBas
   };
 
   return (
-    <Box p="54px 0px">
+    <Box p="54px 0px" id={id}>
       <TypographyWithPrimaryTextColor variant="capsXlg" sx={{
         letterSpacing: "4px"
       }}>{cardTitle}</TypographyWithPrimaryTextColor>

@@ -8,6 +8,7 @@ import { Paragraph } from "@/components/ContentRenderers/Paragraph";
 import { PrimaryTitle } from "@/components/ContentRenderers/PrimaryTitle";
 import { SecondaryTitle } from "@/components/ContentRenderers/SecondaryTitle";
 import { IContent, Renderer } from "@/types/contentRendererTypes";
+import { IframeComponent } from "./Iframe/iframe";
 
 export const RendererMatcher = ({ content }: { content: IContent }) => {
 
@@ -73,6 +74,10 @@ export const RendererMatcher = ({ content }: { content: IContent }) => {
 
     if (el.type === Renderer.BLOCK_HEADER) {
       return <BlockHeader key={key} content={el.content} />
+    }
+
+    if (el.type === Renderer.IFRAME_COMPONENT) {
+      return <IframeComponent key={key} link={el.link} />
     }
 
   })
