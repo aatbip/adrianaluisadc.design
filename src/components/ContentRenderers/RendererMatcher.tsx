@@ -8,7 +8,7 @@ import { Paragraph } from "@/components/ContentRenderers/Paragraph";
 import { PrimaryTitle } from "@/components/ContentRenderers/PrimaryTitle";
 import { SecondaryTitle } from "@/components/ContentRenderers/SecondaryTitle";
 import { IContent, Renderer } from "@/types/contentRendererTypes";
-import { IframeComponent } from "./Iframe/iframe";
+import { IframeComponent } from "@/components/ContentRenderers/Iframe/Iframe";
 
 export const RendererMatcher = ({ content }: { content: IContent }) => {
 
