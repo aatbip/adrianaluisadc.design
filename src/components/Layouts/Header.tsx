@@ -4,9 +4,10 @@ import { Box, Stack, styled } from "@mui/material"
 import { TypographyWithSecondaryTextColor } from "../Styled/TypographyWithSecondaryTextColor"
 import { MoonBrightIcon, NavigationIcon, SunBrightIcon } from "@/icons"
 import { useAppState } from "@/hooks/useAppState"
-import { ThemeMode } from "@/types/interfaces"
+import { DetailsPageTypes, ThemeMode } from "@/types/interfaces"
 import { AnimateUnderline } from "../Styled/AnimateUnderline"
 import Link from "next/link"
+import { handleScrollToElement } from "@/utils/handleScrollToElement"
 
 export const Header = () => {
   const appState = useAppState()
@@ -31,19 +32,30 @@ export const Header = () => {
       </Link>
 
       <Stack direction="row" columnGap={10}>
-        <AnimateUnderline className="link" sx={{
-          '@media (max-width:600px)': {
-            display: 'none'
-          },
-        }}>
-          <DynamicDisplayTypography variant="capsSm">Works</DynamicDisplayTypography>
-        </AnimateUnderline>
+        
         <AnimateUnderline className="link" sx={{
           '@media (max-width:768px)': {
             display: 'none'
           },
-        }}>
-          <DynamicDisplayTypography variant="capsSm">UI Studies</DynamicDisplayTypography>
+        }} onClick={() => handleScrollToElement(DetailsPageTypes.CASE_STUDIES)}>
+          <DynamicDisplayTypography variant="capsSm">Case Studies</DynamicDisplayTypography>
+        </AnimateUnderline>
+
+        <AnimateUnderline className="link" sx={{
+          '@media (max-width:600px)': {
+            display: 'none'
+          },
+        }} onClick={() => handleScrollToElement(DetailsPageTypes.ALL_WORKS)}>
+          <DynamicDisplayTypography variant="capsSm">All Works</DynamicDisplayTypography>
+        </AnimateUnderline>
+
+
+        <AnimateUnderline className="link" sx={{
+          '@media (max-width:600px)': {
+            display: 'none'
+          },
+        }} onClick={() => handleScrollToElement(DetailsPageTypes.UI_EXPLORATIONS)}>
+          <DynamicDisplayTypography variant="capsSm">UI Explorations</DynamicDisplayTypography>
         </AnimateUnderline>
         
         <AnimateUnderline className="link" sx={{
