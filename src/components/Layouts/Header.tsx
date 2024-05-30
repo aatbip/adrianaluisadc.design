@@ -46,7 +46,7 @@ export const Header = () => {
             display: 'none'
           },
         }} onClick={() => handleScrollToElement(DetailsPageTypes.ALL_WORKS)}>
-          <DynamicDisplayTypography variant="capsSm">All Works</DynamicDisplayTypography>
+          <DynamicDisplayTypography variant="capsSm">Projects</DynamicDisplayTypography>
         </AnimateUnderline>
 
 

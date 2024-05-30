@@ -12,7 +12,7 @@ export default function Page() {
       <SecondaryHeader />
       <CardsListSection id={DetailsPageTypes.CASE_STUDIES} cardData={caseStudies} cardTitle={'Case Studies'} type={DetailsPageTypes.CASE_STUDIES} />
       <StyledDivider />
-      <CardsListSection id={DetailsPageTypes.ALL_WORKS} cardData={allWorks} cardTitle={'All Works'} type={DetailsPageTypes.ALL_WORKS} />
+      <CardsListSection id={DetailsPageTypes.ALL_WORKS} cardData={allWorks} cardTitle={'Projects'} type={DetailsPageTypes.ALL_WORKS} />
       <StyledDivider />
       <CardsListSection id={DetailsPageTypes.UI_EXPLORATIONS} cardData={uiExplorations} cardTitle={'UI Explorations'} type={DetailsPageTypes.UI_EXPLORATIONS} />
       <StyledDivider />

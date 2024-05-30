@@ -9,7 +9,7 @@ export const caseStudies: IBasicCardProps[] = [
   },
   
   {
-    caption: '2023 / RESPONSIVE WEB',
+    caption: '2022 / RESPONSIVE WEB',
     title: "Revisioning Nepal Air Trip's Homepage",
     imagePath: 'CaseStudyNepalAirTrip/cover.png',
     pathName: 'CaseStudyNepalAirTrip'

@@ -68,7 +68,7 @@ export const SecondaryHeader = () => {
           }
         />
         <CTAButton
-          content="ALL WORKS"
+          content="PROJECTS"
           handleClick={() => handleScrollToElement(DetailsPageTypes.ALL_WORKS)}
         />
         <CTAButton
