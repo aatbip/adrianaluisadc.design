@@ -22,7 +22,7 @@ export const allWorks: IBasicCardProps[] = [
   },
 
   {
-    caption: '2023 / Branding',
+    caption: '2023 / UI Design',
     title: 'J80 Fitness',
     imagePath: 'J80Fitness/cover.png',
     pathName: 'J80Fitness'
