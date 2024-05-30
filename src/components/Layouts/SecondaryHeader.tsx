@@ -43,11 +43,11 @@ export const SecondaryHeader = () => {
         lineHeight="126px"
         letterSpacing="-2px"
       >
-        Hi! I&apos;m Adriana, a UX Designer who specializes in{" "}
+        Hey! I&apos;m Adriana—a UX Designer who specializes in {" "}
         <BoldedText variant="heading1">
           User Interface, Design System,
         </BoldedText>{" "}
-        & <BoldedText variant="heading1">Storytelling</BoldedText>
+        & <BoldedText variant="heading1">Brand Strategy </BoldedText>💭
       </TypographyWithPrimaryTextColor>
 
       <Stack
