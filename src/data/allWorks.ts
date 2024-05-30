@@ -2,25 +2,31 @@ import { IBasicCardProps } from "@/types/interfaces"
 
 export const allWorks: IBasicCardProps[] = [
   {
+    caption: '2024 / UI DESIGN',
+    title: 'CodeHeroes',
+    imagePath: 'CodeHeroes/cover.png',
+    pathName: 'CodeHeroes'
+  },
+  {
     caption: '2023 / USER INTERFACE',
-    title: 'Boxy Fighters Platform | Profile Page',
+    title: 'Boxy Fighters Platform ',
     imagePath: 'Boxy/banner.png',
     pathName: 'Boxy'
   },
 
-  {
-    caption: '2023 / BRAND',
-    title: 'Charity Ball',
-    imagePath: 'CharityBall/banner.png',
-    pathName: 'CharityBall'
-  },
+ 
   {
     caption: '2023 / USER INTERFACE',
     title: 'Dispense Go',
     imagePath: 'DispenseGo/main.png',
     pathName: 'DispenseGo'
   },
-
+  {
+    caption: '2023 / BRAND',
+    title: 'Jotpress',
+    imagePath: 'Jotpress/cover.png',
+    pathName: 'Jotpress'
+  },
   {
     caption: '2023 / USER INTERFACE',
     title: 'J80 Fitness',
@@ -40,12 +46,23 @@ export const allWorks: IBasicCardProps[] = [
     pathName: 'GSweet'
   },
   {
+    caption: '2023 / USER INTERFACE',
+    title: 'Intripid',
+    imagePath: 'Intripid/cover.png',
+    pathName: 'Intripid'
+  },
+  {
     caption: '2023 / BRAND',
     title: 'Spendidly',
     imagePath: 'Spendidly/banner.png',
     pathName: 'Spendidly' 
   },
-
+  {
+    caption: '2023 / BRAND',
+    title: 'Charity Ball',
+    imagePath: 'CharityBall/banner.png',
+    pathName: 'CharityBall'
+  },
   {
     caption: '2022 / BRAND',
     title: 'Nepal Air Trip Brand Guidelines',

@@ -5,8 +5,8 @@ import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWit
 export const content: IContent = [
   mainTitleCreator({
     title: "Boxy: Fighter's Platform",
-    ctaButton1Content: "UI SHOWCASE",
-    ctaButton1Link: "https://www.behance.net/gallery/195112499/Boxy-A-Platfom-for-Boxers",
+    // ctaButton1Content: "UI SHOWCASE",
+    // ctaButton1Link: "https://www.behance.net/gallery/195112499/Boxy-A-Platfom-for-Boxers",
     // ctaButton2Content: "SEE THIS PROJECT LIVE",
     // ctaButton2Link: "https://boxy.com"
   }),
@@ -25,92 +25,68 @@ export const content: IContent = [
     imagePath: "Boxy/img-1.png",
   }),
 
-
   secondaryTitleCreator({
-    content: "My Role"
+    content: "DESIGN SHOWCASE"
   }),
-  paragraphCreator({
-    content: "As one of the UI Designer for Boxy, I was in charge of the leading the profile dashboard. This crucial feature allows users to:"
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 1.png",
   }),
-
-  bulletListCreator({
-    bulletListItems: [
-      "Edit their bio",
-      "Add highlight videos",
-      "Link social media accounts",
-      "Share personal stories",
-      "Validate account verification",
-      "Add and manage fight records",
-    ]
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 2.png",
   }),
-  // secondaryTitleCreator({
-  //   content: "DESIGN SHOWCASE"
-  // }),
-
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/15.png",
-  //   noMargin: false
-  // }),
-
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/14.png",
-  //   noMargin: true
-  // }),
-
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/13.png",
-  //   noMargin: true
-  // }),
-
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/12.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/11.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/10.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/09.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/08.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/07.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/06.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/05.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/04.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/03.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/02.png",
-  //   noMargin: true
-  // }),
-  // imageHolderCreator({
-  //   imagePath: "CharityBall/01.png",
-  //   noMargin: true
-  // }),
-  
-
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 3.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 4.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 5.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 6.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 7.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 8.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 9.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 10.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 11.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 12.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 13.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 14.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 15.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 16.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 17.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 18.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 19.png",
+  }),
+  imageHolderCreator({
+    imagePath: "Boxy/Slice 20.png",
+  }),
 ]
 
