@@ -13,7 +13,12 @@ export const allWorks: IBasicCardProps[] = [
     imagePath: 'Boxy/banner.png',
     pathName: 'Boxy'
   },
-
+  {
+    caption: '2023 / UI DESIGN',
+    title: 'Healthyish Eater: Landing Page Redesign',
+    imagePath: 'HealthyishEater/cover.png',
+    pathName: 'HealthyishEater'
+  },
  
   {
     caption: '2023 / USER INTERFACE',
@@ -22,23 +27,25 @@ export const allWorks: IBasicCardProps[] = [
     pathName: 'DispenseGo'
   },
   {
+    caption: '2023 / UI DESIGN',
+    title: 'Gliddr - ChatGPT Prompt Extension',
+    imagePath: 'Gliddr/banner.png',
+    pathName: 'Gliddr'
+  },
+  {
     caption: '2023 / BRAND',
     title: 'Jotpress',
     imagePath: 'Jotpress/cover.png',
     pathName: 'Jotpress'
   },
+  
   {
     caption: '2023 / USER INTERFACE',
     title: 'J80 Fitness',
     imagePath: 'J80Fitness/cover.png',
     pathName: 'J80Fitness'
   },
-  // {
-  //   caption: '2023 / UI DESIGN',
-  //   title: 'Gliddr - ChatGPT Prompt Extension',
-  //   imagePath: 'Gliddr/banner.png',
-  //   pathName: 'Gliddr'
-  // },
+  
   {
     caption: '2023 / USER INTERFACE',
     title: 'GSweet Chrome AI Extension',

@@ -63,7 +63,7 @@ export const Header = () => {
             display: 'none'
           },
         }}>
-          <DynamicDisplayTypography variant="capsSm">About Me</DynamicDisplayTypography>
+          <DynamicDisplayTypography variant="capsSm">Resume</DynamicDisplayTypography>
         </AnimateUnderline>
         <Link href={"https://linkedin.com/in/adrianaluisadc"} target="__blank">
         <AnimateUnderline className="link" sx={{

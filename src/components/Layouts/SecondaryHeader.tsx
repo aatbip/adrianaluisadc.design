@@ -77,7 +77,7 @@ export const SecondaryHeader = () => {
             handleScrollToElement(DetailsPageTypes.UI_EXPLORATIONS)
           }
         />
-        <CTAButton content="ABOUT ME" handleClick={() => {}} />
+        <CTAButton content="RESUME" handleClick={() => {}} />
       </Stack>
     </Box>
   );
