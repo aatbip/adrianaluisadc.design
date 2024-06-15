@@ -24,7 +24,6 @@ export const SecondaryHeader = () => {
     }));
   }, [isVisible]);
 
-
   return (
     <Box pt="18px">
       <TypographyWithPrimaryTextColor
@@ -43,7 +42,7 @@ export const SecondaryHeader = () => {
         lineHeight="126px"
         letterSpacing="-2px"
       >
-        Hey! I&apos;m Adriana—a UX Designer who specializes in {" "}
+        Hey! I&apos;m Adriana—a UX Designer who specializes in{" "}
         <BoldedText variant="heading1">
           User Interface, Design System,
         </BoldedText>{" "}

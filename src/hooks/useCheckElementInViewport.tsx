@@ -1,6 +1,8 @@
 import { MutableRefObject, useEffect, useState } from "react";
 
-export const useCheckElementInViewport = (targetRef: MutableRefObject<HTMLDivElement | null>) => {
+export const useCheckElementInViewport = (
+  targetRef: MutableRefObject<HTMLDivElement | null>,
+) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -10,9 +12,9 @@ export const useCheckElementInViewport = (targetRef: MutableRefObject<HTMLDivEle
       },
       {
         root: null, // viewport
-        rootMargin: '0px', // no margin
+        rootMargin: "0px", // no margin
         threshold: 0.5, // 50% of target visible
-      }
+      },
     );
 
     if (targetRef.current) {
@@ -27,6 +29,5 @@ export const useCheckElementInViewport = (targetRef: MutableRefObject<HTMLDivEle
     };
   }, []);
 
-  return isVisible
-
-}
+  return isVisible;
+};

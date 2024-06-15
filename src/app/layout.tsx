@@ -23,7 +23,7 @@ export default function RootLayout({
       <AppContextProvider>
         <body className={`${neueRegrade.className} ${uncutSans.className}`}>
           <CursorExtension>
-            <ThemeRegistry options={{ key: 'mui' }}>
+            <ThemeRegistry options={{ key: "mui" }}>
               <AppBackground>
                 <AppMargin>
                   <Header />

@@ -1,6 +1,16 @@
 import { BulletList } from "@/components/ContentRenderers/BulletList";
 import { IContent } from "@/types/contentRendererTypes";
-import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWithUnderlineCreator, imageHolderCreator, mainTitleCreator, paragraphCreator, primaryTitleCreator, secondaryTitleCreator } from "@/utils/contentRendererObjectCreators";
+import {
+  blockHeaderCreator,
+  blockRendererCreator,
+  bulletListCreator,
+  headingWithUnderlineCreator,
+  imageHolderCreator,
+  mainTitleCreator,
+  paragraphCreator,
+  primaryTitleCreator,
+  secondaryTitleCreator,
+} from "@/utils/contentRendererObjectCreators";
 
 export const content: IContent = [
   mainTitleCreator({
@@ -11,18 +21,17 @@ export const content: IContent = [
     // ctaButton2Link: "https://Gliddr.com"
   }),
 
-  
   // secondaryTitleCreator({
   //   content: "PROJECT OVERVIEW"
   // }),
 
   // paragraphCreator({
   //   content: "Gliddr is.."
-  
+
   // }),
 
   secondaryTitleCreator({
-    content: "DESIGN SHOWCASE"
+    content: "DESIGN SHOWCASE",
   }),
   imageHolderCreator({
     imagePath: "Gliddr/Slice 1.png",
@@ -57,8 +66,4 @@ export const content: IContent = [
   imageHolderCreator({
     imagePath: "Gliddr/Slice 11.png",
   }),
-  
-
-
-]
-
+];

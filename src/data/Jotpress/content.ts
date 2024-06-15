@@ -1,6 +1,16 @@
 import { BulletList } from "@/components/ContentRenderers/BulletList";
 import { IContent } from "@/types/contentRendererTypes";
-import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWithUnderlineCreator, imageHolderCreator, mainTitleCreator, paragraphCreator, primaryTitleCreator, secondaryTitleCreator } from "@/utils/contentRendererObjectCreators";
+import {
+  blockHeaderCreator,
+  blockRendererCreator,
+  bulletListCreator,
+  headingWithUnderlineCreator,
+  imageHolderCreator,
+  mainTitleCreator,
+  paragraphCreator,
+  primaryTitleCreator,
+  secondaryTitleCreator,
+} from "@/utils/contentRendererObjectCreators";
 
 export const content: IContent = [
   mainTitleCreator({
@@ -11,16 +21,14 @@ export const content: IContent = [
     // ctaButton2Link: "https://Jotpress.com"
   }),
 
- 
   secondaryTitleCreator({
-    content: "DESIGN SHOWCASE"
+    content: "DESIGN SHOWCASE",
   }),
 
-   
   primaryTitleCreator({
-    content: "Variant Moon 🌙"
+    content: "Variant Moon 🌙",
   }),
- 
+
   imageHolderCreator({
     imagePath: "Jotpress/Slice 1.png",
   }),
@@ -47,7 +55,7 @@ export const content: IContent = [
   }),
 
   primaryTitleCreator({
-    content: "Variant Sun 🌤️"
+    content: "Variant Sun 🌤️",
   }),
 
   imageHolderCreator({
@@ -68,6 +76,4 @@ export const content: IContent = [
   imageHolderCreator({
     imagePath: "Jotpress/Slice 14.png",
   }),
-
-]
-
+];

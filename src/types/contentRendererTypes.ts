@@ -8,7 +8,7 @@ export enum Renderer {
   BLOCK_RENDERER,
   HEADING_WITH_UNDERLINE,
   BLOCK_HEADER,
-  IFRAME_COMPONENT
+  IFRAME_COMPONENT,
 }
 
 export interface IMainTitle {
@@ -50,8 +50,8 @@ export interface IImageHolder {
 export interface IBlockRenderer {
   type: Renderer.BLOCK_RENDERER;
   blockHeading: string;
-  leftNode: (IBlockHeader | IBulletList | IParagraph)[]
-  rightNode: (IBlockHeader | IBulletList | IParagraph)[]
+  leftNode: (IBlockHeader | IBulletList | IParagraph)[];
+  rightNode: (IBlockHeader | IBulletList | IParagraph)[];
 }
 
 export interface IHeadingWithUnderline {
@@ -69,5 +69,16 @@ export interface IIframeComponent {
   link: string;
 }
 
-export type IContent = (IParagraph | IBulletList | IBlockHeader | IImageHolder | IMainTitle | ISecondaryTitle | IPrimaryTitle | IHeadingWithUnderline | IImageHolder | IBlockRenderer | IIframeComponent)[]
-
+export type IContent = (
+  | IParagraph
+  | IBulletList
+  | IBlockHeader
+  | IImageHolder
+  | IMainTitle
+  | ISecondaryTitle
+  | IPrimaryTitle
+  | IHeadingWithUnderline
+  | IImageHolder
+  | IBlockRenderer
+  | IIframeComponent
+)[];

@@ -1,6 +1,16 @@
 import { BulletList } from "@/components/ContentRenderers/BulletList";
 import { IContent } from "@/types/contentRendererTypes";
-import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWithUnderlineCreator, imageHolderCreator, mainTitleCreator, paragraphCreator, primaryTitleCreator, secondaryTitleCreator } from "@/utils/contentRendererObjectCreators";
+import {
+  blockHeaderCreator,
+  blockRendererCreator,
+  bulletListCreator,
+  headingWithUnderlineCreator,
+  imageHolderCreator,
+  mainTitleCreator,
+  paragraphCreator,
+  primaryTitleCreator,
+  secondaryTitleCreator,
+} from "@/utils/contentRendererObjectCreators";
 
 export const content: IContent = [
   mainTitleCreator({
@@ -11,14 +21,13 @@ export const content: IContent = [
     // ctaButton2Link: "https://boxy.com"
   }),
 
-  
   secondaryTitleCreator({
-    content: "PROJECT OVERVIEW"
+    content: "PROJECT OVERVIEW",
   }),
 
   paragraphCreator({
-    content: "Boxy is an innovative web application designed to connect users with professional fighters for coaching, enable fighters to offer their services, and provide businesses with advanced AI tools to predict social media engagement and access a comprehensive fighter database. The goal is to create a seamless, user-friendly experience for all stakeholders in the combat sports industry."
-  
+    content:
+      "Boxy is an innovative web application designed to connect users with professional fighters for coaching, enable fighters to offer their services, and provide businesses with advanced AI tools to predict social media engagement and access a comprehensive fighter database. The goal is to create a seamless, user-friendly experience for all stakeholders in the combat sports industry.",
   }),
 
   imageHolderCreator({
@@ -26,7 +35,7 @@ export const content: IContent = [
   }),
 
   secondaryTitleCreator({
-    content: "DESIGN SHOWCASE"
+    content: "DESIGN SHOWCASE",
   }),
   imageHolderCreator({
     imagePath: "Boxy/Slice 1.png",
@@ -88,5 +97,4 @@ export const content: IContent = [
   imageHolderCreator({
     imagePath: "Boxy/Slice 20.png",
   }),
-]
-
+];

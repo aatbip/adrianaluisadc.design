@@ -1,10 +1,7 @@
-'use client'
+"use client";
 
-import { Divider, styled } from "@mui/material"
+import { Divider, styled } from "@mui/material";
 
-export const StyledDivider = styled(Divider)
-  (
-    ({ theme }) => ({
-      backgroundColor: theme.color.outline
-    })
-  )
+export const StyledDivider = styled(Divider)(({ theme }) => ({
+  backgroundColor: theme.color.outline,
+}));

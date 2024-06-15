@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import React, { ReactNode, useEffect, useRef } from "react";
 
 import useWindowSize from "@/hooks/useWindowSize";
 
-export const SmoothScroll = ({ children }: { children: ReactNode; }) => {
+export const SmoothScroll = ({ children }: { children: ReactNode }) => {
   // 1.
   const windowSize = useWindowSize();
 
@@ -26,8 +26,9 @@ export const SmoothScroll = ({ children }: { children: ReactNode; }) => {
 
   const setBodyHeight = () => {
     if (scrollingContainerRef.current) {
-      document.body.style.height = `${scrollingContainerRef.current.getBoundingClientRect().height
-        }px`;
+      document.body.style.height = `${
+        scrollingContainerRef.current.getBoundingClientRect().height
+      }px`;
     }
   };
 
@@ -50,17 +51,17 @@ export const SmoothScroll = ({ children }: { children: ReactNode; }) => {
   };
 
   return (
-    <div style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      overflow: 'hidden'
-    }}>
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        overflow: "hidden",
+      }}
+    >
       <div ref={scrollingContainerRef}>{children}</div>
     </div>
   );
 };
-
-

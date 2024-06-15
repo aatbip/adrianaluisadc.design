@@ -29,6 +29,6 @@
 //     )
 //   }
 
-export default async function AboutPage () {
-    return <h1>not yet ready</h1>
+export default async function AboutPage() {
+  return <h1>not yet ready</h1>;
 }

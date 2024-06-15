@@ -1,6 +1,10 @@
 import { Box, Stack } from "@mui/material";
 import { TypographyWithSecondaryTextColor } from "../Styled/TypographyWithSecondaryTextColor";
-import { ArrowUpRightHoveredIcon, ArrowUpRightHoveredLightThemeIcon, ArrowUpRightIcon } from "@/icons";
+import {
+  ArrowUpRightHoveredIcon,
+  ArrowUpRightHoveredLightThemeIcon,
+  ArrowUpRightIcon,
+} from "@/icons";
 import { useState } from "react";
 import { AnimateUnderline } from "../Styled/AnimateUnderline";
 import { useAppState } from "@/hooks/useAppState";
@@ -13,7 +17,7 @@ interface Prop {
 
 export const CTAButton = ({ content, handleClick }: Prop) => {
   const [isHovered, setIsHovered] = useState(false);
-  const themeMode = useAppState()?.themeMode
+  const themeMode = useAppState()?.themeMode;
 
   return (
     <AnimateUnderline>
@@ -26,7 +30,7 @@ export const CTAButton = ({ content, handleClick }: Prop) => {
         className="link"
       >
         <TypographyWithSecondaryTextColor
-        variant="capsMd"
+          variant="capsMd"
           sx={{
             color: (theme) =>
               isHovered ? theme.color.text.primary : theme.color.text.secondary,
@@ -34,11 +38,22 @@ export const CTAButton = ({ content, handleClick }: Prop) => {
         >
           {content}
         </TypographyWithSecondaryTextColor>
-        {!isHovered && <Box><ArrowUpRightIcon /></Box>}
-        {isHovered && themeMode === ThemeMode.DARK && <Box><ArrowUpRightHoveredIcon /></Box>}
-        {isHovered && themeMode === ThemeMode.LIGHT && <Box><ArrowUpRightHoveredLightThemeIcon /></Box>}
+        {!isHovered && (
+          <Box>
+            <ArrowUpRightIcon />
+          </Box>
+        )}
+        {isHovered && themeMode === ThemeMode.DARK && (
+          <Box>
+            <ArrowUpRightHoveredIcon />
+          </Box>
+        )}
+        {isHovered && themeMode === ThemeMode.LIGHT && (
+          <Box>
+            <ArrowUpRightHoveredLightThemeIcon />
+          </Box>
+        )}
       </Stack>
     </AnimateUnderline>
   );
 };
-

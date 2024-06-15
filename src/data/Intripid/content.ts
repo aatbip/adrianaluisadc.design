@@ -1,6 +1,16 @@
 import { BulletList } from "@/components/ContentRenderers/BulletList";
 import { IContent } from "@/types/contentRendererTypes";
-import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWithUnderlineCreator, imageHolderCreator, mainTitleCreator, paragraphCreator, primaryTitleCreator, secondaryTitleCreator } from "@/utils/contentRendererObjectCreators";
+import {
+  blockHeaderCreator,
+  blockRendererCreator,
+  bulletListCreator,
+  headingWithUnderlineCreator,
+  imageHolderCreator,
+  mainTitleCreator,
+  paragraphCreator,
+  primaryTitleCreator,
+  secondaryTitleCreator,
+} from "@/utils/contentRendererObjectCreators";
 
 export const content: IContent = [
   mainTitleCreator({
@@ -11,11 +21,10 @@ export const content: IContent = [
     // ctaButton2Link: "https://Intripid.com"
   }),
 
- 
   secondaryTitleCreator({
-    content: "DESIGN SHOWCASE"
+    content: "DESIGN SHOWCASE",
   }),
- 
+
   imageHolderCreator({
     imagePath: "Intripid/Slice 1.png",
   }),
@@ -73,5 +82,4 @@ export const content: IContent = [
   imageHolderCreator({
     imagePath: "Intripid/Slice 19.png",
   }),
-]
-
+];

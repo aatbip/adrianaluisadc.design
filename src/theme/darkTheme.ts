@@ -1,5 +1,5 @@
-import { createTheme } from '@mui/material'
-import { neueRegrade, uncutSans } from '@/fonts/index'
+import { createTheme } from "@mui/material";
+import { neueRegrade, uncutSans } from "@/fonts/index";
 
 export const darkTheme = createTheme({
   spacing: 4,
@@ -9,122 +9,122 @@ export const darkTheme = createTheme({
       sm: 600,
       md: 768,
       lg: 1280,
-      xl: 1440
+      xl: 1440,
     },
   },
   color: {
     text: {
-      primary: '#F4F4F4',
-      secondary: '#7D7D7D',
-      variation1: '#F4F4F4',
-      variation2: '#F4F4F4'
+      primary: "#F4F4F4",
+      secondary: "#7D7D7D",
+      variation1: "#F4F4F4",
+      variation2: "#F4F4F4",
     },
     background: {
-      primary: '#222324'
+      primary: "#222324",
     },
-    outline: '#333333',
-    bright: '#E3BC57'
+    outline: "#333333",
+    bright: "#E3BC57",
   },
   typography: {
     heading1: {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '100px',
-      fontStyle: 'normal',
+      fontSize: "100px",
+      fontStyle: "normal",
       fontWeight: 500,
     },
     heading2: {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '75',
-      fontStyle: 'normal',
+      fontSize: "75",
+      fontStyle: "normal",
       fontWeight: 500,
     },
     heading3: {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '56px',
-      fontStyle: 'normal',
+      fontSize: "56px",
+      fontStyle: "normal",
       fontWeight: 500,
     },
     heading4: {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '42px',
-      fontStyle: 'normal',
+      fontSize: "42px",
+      fontStyle: "normal",
       fontWeight: 500,
     },
     heading5: {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '32px',
-      fontStyle: 'normal',
+      fontSize: "32px",
+      fontStyle: "normal",
       fontWeight: 500,
     },
     heading6: {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '24px',
-      fontStyle: 'normal',
+      fontSize: "24px",
+      fontStyle: "normal",
       fontWeight: 500,
     },
-    'Body Reg': {
+    "Body Reg": {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '18px',
-      fontStyle: 'normal',
+      fontSize: "18px",
+      fontStyle: "normal",
       fontWeight: 400,
     },
-    'Body Bold': {
+    "Body Bold": {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '18px',
-      fontStyle: 'normal',
+      fontSize: "18px",
+      fontStyle: "normal",
       fontWeight: 600,
     },
-    'Body Reg Italic': {
+    "Body Reg Italic": {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '18px',
-      fontStyle: 'italic',
+      fontSize: "18px",
+      fontStyle: "italic",
       fontWeight: 400,
     },
-    'Body Bold Italic': {
+    "Body Bold Italic": {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '18px',
-      fontStyle: 'italic',
+      fontSize: "18px",
+      fontStyle: "italic",
       fontWeight: 600,
     },
-    'Subtitle Text': {
+    "Subtitle Text": {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '14px',
-      fontStyle: 'normal',
+      fontSize: "14px",
+      fontStyle: "normal",
       fontWeight: 400,
     },
-    'Caption Text': {
+    "Caption Text": {
       fontFamily: neueRegrade.style.fontFamily,
-      fontSize: '11px',
-      fontStyle: 'normal',
+      fontSize: "11px",
+      fontStyle: "normal",
       fontWeight: 400,
     },
     capsSm: {
       fontFamily: uncutSans.style.fontFamily,
-      fontSize: '15px',
-      fontStyle: 'normal',
+      fontSize: "15px",
+      fontStyle: "normal",
       fontWeight: 500,
-      textTransform: 'uppercase'
+      textTransform: "uppercase",
     },
     capsMd: {
       fontFamily: uncutSans.style.fontFamily,
-      fontSize: '18px',
-      fontStyle: 'normal',
+      fontSize: "18px",
+      fontStyle: "normal",
       fontWeight: 500,
-      textTransform: 'uppercase'
+      textTransform: "uppercase",
     },
     capsLg: {
       fontFamily: uncutSans.style.fontFamily,
-      fontSize: '30px',
-      fontStyle: 'normal',
+      fontSize: "30px",
+      fontStyle: "normal",
       fontWeight: 500,
-      textTransform: 'uppercase'
+      textTransform: "uppercase",
     },
     capsXlg: {
       fontFamily: uncutSans.style.fontFamily,
-      fontSize: '40px',
-      fontStyle: 'normal',
+      fontSize: "40px",
+      fontStyle: "normal",
       fontWeight: 500,
-      textTransform: 'uppercase'
+      textTransform: "uppercase",
     },
   },
-})
+});

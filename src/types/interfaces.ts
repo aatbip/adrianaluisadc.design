@@ -1,12 +1,12 @@
 export enum ThemeMode {
-  DARK = 'dark',
-  LIGHT = 'light'
+  DARK = "dark",
+  LIGHT = "light",
 }
 
 export enum DetailsPageTypes {
-  ALL_WORKS = 'all-works',
-  UI_EXPLORATIONS = 'ui-explorations',
-  CASE_STUDIES = 'case-studies'
+  ALL_WORKS = "all-works",
+  UI_EXPLORATIONS = "ui-explorations",
+  CASE_STUDIES = "case-studies",
 }
 
 export interface IBasicCardProps {
@@ -15,5 +15,3 @@ export interface IBasicCardProps {
   imagePath: string;
   pathName: string;
 }
-
-

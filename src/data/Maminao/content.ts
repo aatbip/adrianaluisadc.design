@@ -1,9 +1,19 @@
 import { IContent } from "@/types/contentRendererTypes";
-import { blockHeaderCreator, blockRendererCreator, bulletListCreator, headingWithUnderlineCreator, imageHolderCreator, mainTitleCreator, paragraphCreator, primaryTitleCreator, secondaryTitleCreator } from "@/utils/contentRendererObjectCreators";
+import {
+  blockHeaderCreator,
+  blockRendererCreator,
+  bulletListCreator,
+  headingWithUnderlineCreator,
+  imageHolderCreator,
+  mainTitleCreator,
+  paragraphCreator,
+  primaryTitleCreator,
+  secondaryTitleCreator,
+} from "@/utils/contentRendererObjectCreators";
 
 export const content: IContent = [
   mainTitleCreator({
-  title: "Maminao",
+    title: "Maminao",
     // ctaButton1Content: "SEE THIS PROJECT LIVE",
     // ctaButton1Link: "link",
     // ctaButton2Content: "UI SHOWCASE",
@@ -21,26 +31,24 @@ export const content: IContent = [
   //   content: "Our journey began with a simple yet powerful question: How can we make the process of buying cannabis proGucts as smooth anG Giscreet as possible? To answer this, we neeGeG to Give Geep into the minGs of our potential users."
   // }),ß
   secondaryTitleCreator({
-    content: "DESIGN SHOWCASE"
+    content: "DESIGN SHOWCASE",
   }),
   imageHolderCreator({
     imagePath: "Maminao/G1.png",
-    noMargin: true
+    noMargin: true,
   }),
 
   imageHolderCreator({
     imagePath: "Maminao/G2.png",
-    noMargin: true
+    noMargin: true,
   }),
 
   imageHolderCreator({
     imagePath: "Maminao/G3.png",
-    noMargin: true
+    noMargin: true,
   }),
   imageHolderCreator({
     imagePath: "Maminao/G4.png",
-    noMargin: true
+    noMargin: true,
   }),
-  
-]
-
+];

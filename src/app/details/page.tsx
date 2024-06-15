@@ -1,5 +1,5 @@
-export const revalidate = 0
-export const dynamic = 'force-dynamic'
+export const revalidate = 0;
+export const dynamic = "force-dynamic";
 
 import { RendererMatcher } from "@/components/ContentRenderers/RendererMatcher";
 import { DetailsPageMargin } from "@/hoc/DetailsPageMargin";
@@ -7,7 +7,6 @@ import { DetailsPageTypes } from "@/types/interfaces";
 import { notFound } from "next/navigation";
 import { DetailsPageNameHeader } from "./ui/DetailsPageNameHeader";
 import { Box } from "@mui/material";
-
 
 async function getFile(pathName: string) {
   try {
@@ -19,14 +18,15 @@ async function getFile(pathName: string) {
   }
 }
 
-
-export default async function DetailsPage(
-  { searchParams }: { searchParams: { type: DetailsPageTypes, pathName: string; } }
-) {
+export default async function DetailsPage({
+  searchParams,
+}: {
+  searchParams: { type: DetailsPageTypes; pathName: string };
+}) {
   const content = await getFile(searchParams.pathName);
 
   if (!content) {
-    return notFound()
+    return notFound();
   }
 
   if (searchParams.type === DetailsPageTypes.ALL_WORKS) {
@@ -35,7 +35,7 @@ export default async function DetailsPage(
         <DetailsPageNameHeader name="All Works" />
         <RendererMatcher content={content} />
       </DetailsPageMargin>
-    )
+    );
   }
 
   if (searchParams.type === DetailsPageTypes.UI_EXPLORATIONS) {
@@ -44,7 +44,7 @@ export default async function DetailsPage(
         <DetailsPageNameHeader name="UI Explorations" />
         <RendererMatcher content={content} />
       </DetailsPageMargin>
-    )
+    );
   }
 
   if (searchParams.type === DetailsPageTypes.CASE_STUDIES) {
@@ -53,7 +53,6 @@ export default async function DetailsPage(
         <DetailsPageNameHeader name="Case Studies" />
         <RendererMatcher content={content} />
       </DetailsPageMargin>
-    )
+    );
   }
-
 }
