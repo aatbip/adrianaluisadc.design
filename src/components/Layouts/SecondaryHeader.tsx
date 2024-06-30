@@ -78,9 +78,9 @@ export const SecondaryHeader = () => {
           }
         />
         <CTAButton content="RESUME" handleClick={() => {
+          window.open("/career/resume.pdf", "__blank")
 
-            
-          
+
         }} />
       </Stack>
     </Box>
