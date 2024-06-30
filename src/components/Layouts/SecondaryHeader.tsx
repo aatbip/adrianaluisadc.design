@@ -10,6 +10,7 @@ import Link from "next/link";
 import { DetailsPageTypes } from "@/types/interfaces";
 import { useRouter } from "next/navigation";
 import { handleScrollToElement } from "@/utils/handleScrollToElement";
+import { url } from "inspector";
 
 export const SecondaryHeader = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
@@ -76,7 +77,11 @@ export const SecondaryHeader = () => {
             handleScrollToElement(DetailsPageTypes.UI_EXPLORATIONS)
           }
         />
-        <CTAButton content="RESUME" handleClick={() => {}} />
+        <CTAButton content="RESUME" handleClick={() => {
+
+            
+          
+        }} />
       </Stack>
     </Box>
   );
