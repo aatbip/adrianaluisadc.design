@@ -77,11 +77,12 @@ export const SecondaryHeader = () => {
             handleScrollToElement(DetailsPageTypes.UI_EXPLORATIONS)
           }
         />
-        <CTAButton content="RESUME" handleClick={() => {
-          window.open("/career/resume.pdf", "__blank")
-
-
-        }} />
+        <CTAButton
+          content="RESUME"
+          handleClick={() => {
+            window.open("/career/resume.pdf", "__blank");
+          }}
+        />
       </Stack>
     </Box>
   );
