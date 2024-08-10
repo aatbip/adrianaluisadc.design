@@ -5,6 +5,7 @@ import { TypographyWithPrimaryTextColor } from "@/components/Styled/TypographyWi
 import { DetailsPageTypes, IBasicCardProps } from "@/types/interfaces";
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export const CardsListSection = ({
@@ -20,9 +21,9 @@ export const CardsListSection = ({
 }) => {
   const router = useRouter();
 
-  const handleCardClick = (data: IBasicCardProps) => {
-    router.push(`/details?type=${type}&pathName=${data.pathName}`);
-  };
+  // const handleCardClick = (data: IBasicCardProps) => {
+  //   router.push(`/details?type=${type}&pathName=${data.pathName}`);
+  // };
 
   return (
     <Box p="54px 0px" id={id}>
@@ -38,13 +39,13 @@ export const CardsListSection = ({
         {cardData.map((data, key) => {
           return (
             <Grid key={key} xs={12} md={6} lg={4}>
-              <Box onClick={() => handleCardClick(data)}>
+              <Link href={`/details?type=${type}&pathName=${data.pathName}`} prefetch={true}>
                 <BasicCard
                   caption={data.caption}
                   title={data.title}
                   imagePath={data.imagePath}
                 />
-              </Box>
+              </Link>
             </Grid>
           );
         })}
