@@ -28,6 +28,12 @@ export const allWorks: IBasicCardProps[] = [
   },
   {
     caption: "2023 / UI DESIGN",
+    title: "Geolah",
+    imagePath: "Geolah/cover.png",
+    pathName: "Geolah",
+  },
+  {
+    caption: "2023 / UI DESIGN",
     title: "Gliddr - ChatGPT Prompt Extension",
     imagePath: "Gliddr/banner.png",
     pathName: "Gliddr",
